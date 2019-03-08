@@ -1,0 +1,54 @@
+@import 'public';
+body{
+    width:100%;
+    height:100%;
+    background: #F9F9F9;
+}
+
+@if $fontSize == 20{
+    #me{
+        font-size: $fontSize;
+    }
+}@else if $font-size == 18{
+    #me{
+        font-size: 18px;
+    }
+}@else{
+    #me{
+        font-size:16px;
+    }
+}
+
+$colnum : 4;
+@for $i from 1 through $colnum{
+    col-#{$i}{
+    
+        width : 100% / $colnum *$i;
+    }
+}
+@for $j from 1 to $colnum{
+    col-#{$j}{
+        width:100%;
+    }
+}
+
+$arr : success error warning;
+@each $i in $arr{
+    icon-#{$i}{
+        background-image : url(img/icons/#{$i}.jpg);
+    }
+}
+
+#div{
+    @include size(500px,300px);
+    @include position(absolute,300px,300px);
+    
+}
+
+body{
+    background:fnColor(light);
+}
+#you{
+    @extend #div;
+    background:pink;
+}
