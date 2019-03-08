@@ -173,7 +173,10 @@
             
         }
     
+    
+   
 }
+
 
 @mixin cleardecoration{
     text-decoration: none;
@@ -190,13 +193,13 @@ a{
 
 //搜索框
 #searchProduce{
-   
+    overflow: hidden;
     #searchProduceFrame{
-        overflow: hidden;
+        
         margin-left:10%;
         div{
           
-            height:110px;
+            height:68px;
             float: left;
         }
         .logo-5lux{
@@ -230,6 +233,7 @@ a{
                 float:left;
             }
             .tips-5lux{
+                margin-top:10px;
                 float:left;
                 list-style:none;
                  padding-left:2px;
@@ -288,5 +292,84 @@ a{
             list-style: none;
            
         }
+   
 }
 
+//nav
+  #nav5lux{ 
+      overflow: hidden;
+      background: #232324; 
+      width:100%;
+      height:38px;
+        #productNavigation{
+        padding-left: 10% ;
+         font-size:12px;
+        .produce-nav{
+            float:left;  
+            list-style: none; 
+            background: #232324;
+            li{
+                float:left;
+                
+                a{
+                   line-height:38px;
+                   margin:0 30px;
+                   
+                    color:#c8a985;
+                    background: #232324;
+                    height:38px;
+                   
+                    display: block;
+                }
+                a:last-of-type{
+                     padding-right: 3px;
+                }
+            }
+            li:last-of-type{
+                background: url(../src/images/share02.png)  -58px -169px;
+            }
+            li:hover,li:hover a{
+                background: #cf0101;
+            }
+            li:hover a{
+                color:white;
+            }
+        }
+        .oversea-service{
+            float:right;
+          
+            .first-back{
+                float:left;
+                width:100px;
+                height:38px;
+                margin-right:264px;
+               background: url(../src/images/overseaslogo.gif);
+               
+                
+            }
+            .second-back{
+                width:30px;
+                height:38px;
+                position:absolute;
+                right:235px;
+                background: url(../src/images/share02.png)  -237px -66px;
+            }
+            .third-back{
+                   width:30px;
+                height:38px;
+                 position:absolute;
+                right:200px;
+                background: url(../src/images/share02.png)  -296px -66px;
+            }
+            .forth-back{
+                   width:20px;
+                height:38px;
+                 position:absolute;
+                right:158px;
+                padding-right:20px;
+                background: url(../src/images/share02.png)  -354px -66px;
+            }
+        }
+        
+    }
+  }

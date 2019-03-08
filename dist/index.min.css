@@ -111,75 +111,133 @@
 a {
   text-decoration: none; }
 
-#searchProduce #searchProduceFrame {
+#searchProduce {
+  overflow: hidden; }
+  #searchProduce #searchProduceFrame {
+    margin-left: 10%; }
+    #searchProduce #searchProduceFrame div {
+      height: 68px;
+      float: left; }
+    #searchProduce #searchProduceFrame .logo-5lux {
+      width: 244px;
+      background: url(../src/images/logo.jpg) no-repeat;
+      margin-right: 48px; }
+    #searchProduce #searchProduceFrame .slogan-5lux {
+      width: 142px;
+      margin-top: 20px;
+      background: url(../src/images/yijian.jpg) no-repeat;
+      margin-right: 50px; }
+    #searchProduce #searchProduceFrame .search-5lux {
+      padding-top: 38px;
+      width: 350px; }
+      #searchProduce #searchProduceFrame .search-5lux #search {
+        width: 264px;
+        height: 34px;
+        border: 2px solid #c69c6d;
+        color: #bbbbbb;
+        float: left; }
+      #searchProduce #searchProduceFrame .search-5lux #btn {
+        width: 82px;
+        height: 38px;
+        background: #C69C6D;
+        color: #fff;
+        border: none;
+        float: left; }
+      #searchProduce #searchProduceFrame .search-5lux .tips-5lux {
+        margin-top: 10px;
+        float: left;
+        list-style: none;
+        padding-left: 2px; }
+        #searchProduce #searchProduceFrame .search-5lux .tips-5lux li {
+          float: left;
+          font-size: 12px;
+          color: #999999;
+          margin-right: 25px; }
+    #searchProduce #searchProduceFrame .oversea-5lux {
+      float: left;
+      width: 200px;
+      background: url(../src/images/overseadef.jpg) no-repeat;
+      margin: 40px 0 0 50px; }
+    #searchProduce #searchProduceFrame .shopping-cart {
+      background: url(../src/images/v30cart.png) no-repeat;
+      background-position: 10px;
+      width: 84px;
+      height: 32px;
+      border: 1px solid #cccccc;
+      margin: 39px 0 0 50px;
+      font-size: 12px;
+      line-height: 32px;
+      color: #666; }
+      #searchProduce #searchProduceFrame .shopping-cart .total {
+        margin-left: 42px; }
+        #searchProduce #searchProduceFrame .shopping-cart .total .total-num {
+          color: red; }
+      #searchProduce #searchProduceFrame .shopping-cart strong {
+        float: right;
+        margin-right: 6px; }
+  #searchProduce .search-value {
+    width: 264px;
+    border: 1px solid #cccccc;
+    position: absolute;
+    color: #999999;
+    font-size: 12px;
+    left: 638px;
+    top: 184px;
+    list-style: none; }
+
+#nav5lux {
   overflow: hidden;
-  margin-left: 10%; }
-  #searchProduce #searchProduceFrame div {
-    height: 110px;
-    float: left; }
-  #searchProduce #searchProduceFrame .logo-5lux {
-    width: 244px;
-    background: url(../src/images/logo.jpg) no-repeat;
-    margin-right: 48px; }
-  #searchProduce #searchProduceFrame .slogan-5lux {
-    width: 142px;
-    margin-top: 20px;
-    background: url(../src/images/yijian.jpg) no-repeat;
-    margin-right: 50px; }
-  #searchProduce #searchProduceFrame .search-5lux {
-    padding-top: 38px;
-    width: 350px; }
-    #searchProduce #searchProduceFrame .search-5lux #search {
-      width: 264px;
-      height: 34px;
-      border: 2px solid #c69c6d;
-      color: #bbbbbb;
-      float: left; }
-    #searchProduce #searchProduceFrame .search-5lux #btn {
-      width: 82px;
-      height: 38px;
-      background: #C69C6D;
-      color: #fff;
-      border: none;
-      float: left; }
-    #searchProduce #searchProduceFrame .search-5lux .tips-5lux {
+  background: #232324;
+  width: 100%;
+  height: 38px; }
+  #nav5lux #productNavigation {
+    padding-left: 10%;
+    font-size: 12px; }
+    #nav5lux #productNavigation .produce-nav {
       float: left;
       list-style: none;
-      padding-left: 2px; }
-      #searchProduce #searchProduceFrame .search-5lux .tips-5lux li {
+      background: #232324; }
+      #nav5lux #productNavigation .produce-nav li {
+        float: left; }
+        #nav5lux #productNavigation .produce-nav li a {
+          line-height: 38px;
+          margin: 0 30px;
+          color: #c8a985;
+          background: #232324;
+          height: 38px;
+          display: block; }
+        #nav5lux #productNavigation .produce-nav li a:last-of-type {
+          padding-right: 3px; }
+      #nav5lux #productNavigation .produce-nav li:last-of-type {
+        background: url(../src/images/share02.png) -58px -169px; }
+      #nav5lux #productNavigation .produce-nav li:hover, #nav5lux #productNavigation .produce-nav li:hover a {
+        background: #cf0101; }
+      #nav5lux #productNavigation .produce-nav li:hover a {
+        color: white; }
+    #nav5lux #productNavigation .oversea-service {
+      float: right; }
+      #nav5lux #productNavigation .oversea-service .first-back {
         float: left;
-        font-size: 12px;
-        color: #999999;
-        margin-right: 25px; }
-  #searchProduce #searchProduceFrame .oversea-5lux {
-    float: left;
-    width: 200px;
-    background: url(../src/images/overseadef.jpg) no-repeat;
-    margin: 40px 0 0 50px; }
-  #searchProduce #searchProduceFrame .shopping-cart {
-    background: url(../src/images/v30cart.png) no-repeat;
-    background-position: 10px;
-    width: 84px;
-    height: 32px;
-    border: 1px solid #cccccc;
-    margin: 39px 0 0 50px;
-    font-size: 12px;
-    line-height: 32px;
-    color: #666; }
-    #searchProduce #searchProduceFrame .shopping-cart .total {
-      margin-left: 42px; }
-      #searchProduce #searchProduceFrame .shopping-cart .total .total-num {
-        color: red; }
-    #searchProduce #searchProduceFrame .shopping-cart strong {
-      float: right;
-      margin-right: 6px; }
-
-#searchProduce .search-value {
-  width: 264px;
-  border: 1px solid #cccccc;
-  position: absolute;
-  color: #999999;
-  font-size: 12px;
-  left: 638px;
-  top: 184px;
-  list-style: none; }
+        width: 100px;
+        height: 38px;
+        margin-right: 264px;
+        background: url(../src/images/overseaslogo.gif); }
+      #nav5lux #productNavigation .oversea-service .second-back {
+        width: 30px;
+        height: 38px;
+        position: absolute;
+        right: 235px;
+        background: url(../src/images/share02.png) -237px -66px; }
+      #nav5lux #productNavigation .oversea-service .third-back {
+        width: 30px;
+        height: 38px;
+        position: absolute;
+        right: 200px;
+        background: url(../src/images/share02.png) -296px -66px; }
+      #nav5lux #productNavigation .oversea-service .forth-back {
+        width: 20px;
+        height: 38px;
+        position: absolute;
+        right: 158px;
+        padding-right: 20px;
+        background: url(../src/images/share02.png) -354px -66px; }
