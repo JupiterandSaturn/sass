@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+#businessCard {
+  width: 100%;
+  height: 80px;
+  background-image: url(../src/images/154288026284_1300x80.jpg); }
+
+#userNavigation {
+  overflow: hidden;
+  height: 30px;
+  background: #f2f2f2;
+  padding: 0 10%; }
+  #userNavigation .select-5lux .select-next span {
+    background: url(../src/images/brandstore_share.png) no-repeat -352px -436px;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin: 0 0 0 12px; }
+  #userNavigation .select-5lux:hover .select-next span {
+    background: url(../src/images/brandstore_share.png) no-repeat -352px -465px; }
+  #userNavigation .index-Navigation {
+    float: left;
+    list-style: none;
+    line-height: 30px;
+    font-size: 12px;
+    color: #666666; }
+    #userNavigation .index-Navigation li {
+      float: left; }
+    #userNavigation .index-Navigation .project-index a {
+      padding-right: 16px;
+      border-right: 1px solid #e7e7e7; }
+    #userNavigation .index-Navigation .project-index a:hover {
+      color: coral; }
+    #userNavigation .index-Navigation .phone-number {
+      padding-left: 40px;
+      background: url(../src/images/line_bg.png) no-repeat 16px 5px; }
+  #userNavigation .user-message {
+    float: right;
+    list-style: none;
+    line-height: 30px;
+    font-size: 12px;
+    color: #666666; }
+    #userNavigation .user-message li {
+      float: left; }
+      #userNavigation .user-message li a {
+        padding: 0 16px;
+        border-right: 1px solid #E7E7E7; }
+    #userNavigation .user-message .phone-download:hover a, #userNavigation .user-message .user-login a:hover {
+      color: red; }
+    #userNavigation .user-message .phone-download:hover span {
+      background: url(../src/images/brandstore_share.png) no-repeat -243px -404px; }
+    #userNavigation .user-message .select-5lux a:hover, #userNavigation .user-message .user-help a:hover, #userNavigation .user-message .user-register a:hover {
+      color: coral; }
+    #userNavigation .user-message .phone-download a {
+      padding: 0;
+      margin-right: -41px;
+      border: none;
+      margin-left: 16px; }
+    #userNavigation .user-message .phone-download span {
+      display: inline-block;
+      background: url(../src/images/brandstore_share.png) no-repeat -243px -370px;
+      height: 30px;
+      float: right;
+      width: 77px;
+      margin-right: 16px; }
+    #userNavigation .user-message .user-register .present-register {
+      background: url(../src/images/youli.gif) no-repeat;
+      width: 22px;
+      height: 25px;
+      display: inline-block;
+      margin: 0 5px 0 16px; }
+    #userNavigation .user-message .user-register a {
+      padding-left: 0;
+      float: right; }
+  #userNavigation .phone-erweima {
+    display: none;
+    text-align: center;
+    position: absolute;
+    border: 1px solid #ececec;
+    background: white;
+    right: 10%;
+    top: 110px; }
+    #userNavigation .phone-erweima dt {
+      background: url(../src/images/qr.jpg) no-repeat;
+      margin: 0 6px 9px 6px;
+      width: 117px;
+      height: 112px; }
+    #userNavigation .phone-erweima dd {
+      color: #6c6e6b; }
+      #userNavigation .phone-erweima dd span {
+        font-size: 20px;
+        color: #921f0a; }
+  #userNavigation .list-5lux {
+    position: absolute;
+    right: 362px;
+    border: 1px solid #ECECEC;
+    background: white;
+    width: 138px;
+    text-align: center;
+    top: 108px;
+    display: none; }
+    #userNavigation .list-5lux dd {
+      height: 38px;
+      line-height: 38px;
+      font-size: 12px; }
+      #userNavigation .list-5lux dd a {
+        color: #635f60; }
+
+a {
+  text-decoration: none; }
+
+#searchProduce #searchProduceFrame {
+  overflow: hidden;
+  margin-left: 10%; }
+  #searchProduce #searchProduceFrame div {
+    height: 110px;
+    float: left; }
+  #searchProduce #searchProduceFrame .logo-5lux {
+    width: 244px;
+    background: url(../src/images/logo.jpg) no-repeat;
+    margin-right: 48px; }
+  #searchProduce #searchProduceFrame .slogan-5lux {
+    width: 142px;
+    margin-top: 20px;
+    background: url(../src/images/yijian.jpg) no-repeat;
+    margin-right: 50px; }
+  #searchProduce #searchProduceFrame .search-5lux {
+    padding-top: 38px;
+    width: 350px; }
+    #searchProduce #searchProduceFrame .search-5lux #search {
+      width: 264px;
+      height: 34px;
+      border: 2px solid #c69c6d;
+      color: #bbbbbb;
+      float: left; }
+    #searchProduce #searchProduceFrame .search-5lux #btn {
+      width: 82px;
+      height: 38px;
+      background: #C69C6D;
+      color: #fff;
+      border: none;
+      float: left; }
+    #searchProduce #searchProduceFrame .search-5lux .tips-5lux {
+      float: left;
+      list-style: none;
+      padding-left: 2px; }
+      #searchProduce #searchProduceFrame .search-5lux .tips-5lux li {
+        float: left;
+        font-size: 12px;
+        color: #999999;
+        margin-right: 25px; }
+  #searchProduce #searchProduceFrame .oversea-5lux {
+    float: left;
+    width: 200px;
+    background: url(../src/images/overseadef.jpg) no-repeat;
+    margin: 40px 0 0 50px; }
+  #searchProduce #searchProduceFrame .shopping-cart {
+    background: url(../src/images/v30cart.png) no-repeat;
+    background-position: 10px;
+    width: 84px;
+    height: 32px;
+    border: 1px solid #cccccc;
+    margin: 39px 0 0 50px;
+    font-size: 12px;
+    line-height: 32px;
+    color: #666; }
+    #searchProduce #searchProduceFrame .shopping-cart .total {
+      margin-left: 42px; }
+      #searchProduce #searchProduceFrame .shopping-cart .total .total-num {
+        color: red; }
+    #searchProduce #searchProduceFrame .shopping-cart strong {
+      float: right;
+      margin-right: 6px; }
+
+#searchProduce .search-value {
+  width: 264px;
+  border: 1px solid #cccccc;
+  position: absolute;
+  color: #999999;
+  font-size: 12px;
+  left: 638px;
+  top: 184px;
+  list-style: none; }
