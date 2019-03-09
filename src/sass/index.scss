@@ -1,2 +1,58 @@
 @import 'public';
 
+  //banner
+
+#imageBanner{
+    .image-list{
+        border-top:1px solid #635F60;
+        height:520px;
+       #left,#right{
+           width:40px;
+           height:520px;
+           background:black;
+           opacity: 0.3;
+           position:absolute;
+           z-index: 1000;
+          
+       }
+       #right{
+           right:0;
+       }
+       #btnLeft{
+           z-index: 1000;
+           width:30px;
+           height:50px;
+           background: url(../src/images/templateleft.png);
+           display: block;
+           position:absolute;
+           top:457px;
+           left:260px;
+       }
+        #btnRight{
+           z-index: 1000;
+           width:30px;
+           height:50px;
+           background: url(../src/images/templateright.png);
+           display: block;
+           position:absolute;
+           top:457px;
+           right:260px;
+       }
+      
+           li{
+               height:520px;
+               z-index: 999;
+               position:absolute;
+               left:0;
+               width:100%;
+            img{
+                width:100%;
+               z-index: 999;
+               top:257px;
+              
+              }
+           
+       }
+       
+    }
+}

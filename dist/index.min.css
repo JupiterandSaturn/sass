@@ -111,79 +111,80 @@
 a {
   text-decoration: none; }
 
-#searchProduce {
-  overflow: hidden; }
-  #searchProduce #searchProduceFrame {
-    margin-left: 10%; }
-    #searchProduce #searchProduceFrame div {
-      height: 68px;
+#searchProduce #searchProduceFrame {
+  height: 108px;
+  overflow: hidden;
+  margin-left: 10%; }
+  #searchProduce #searchProduceFrame div {
+    height: 96px;
+    float: left; }
+  #searchProduce #searchProduceFrame .logo-5lux {
+    width: 244px;
+    background: url(../src/images/logo.jpg) no-repeat;
+    margin-right: 48px; }
+  #searchProduce #searchProduceFrame .slogan-5lux {
+    width: 142px;
+    margin-top: 20px;
+    background: url(../src/images/yijian.jpg) no-repeat;
+    margin-right: 50px; }
+  #searchProduce #searchProduceFrame .search-5lux {
+    padding-top: 38px;
+    width: 350px; }
+    #searchProduce #searchProduceFrame .search-5lux #search {
+      width: 264px;
+      height: 34px;
+      border: 2px solid #c69c6d;
+      color: #bbbbbb;
       float: left; }
-    #searchProduce #searchProduceFrame .logo-5lux {
-      width: 244px;
-      background: url(../src/images/logo.jpg) no-repeat;
-      margin-right: 48px; }
-    #searchProduce #searchProduceFrame .slogan-5lux {
-      width: 142px;
-      margin-top: 20px;
-      background: url(../src/images/yijian.jpg) no-repeat;
-      margin-right: 50px; }
-    #searchProduce #searchProduceFrame .search-5lux {
-      padding-top: 38px;
-      width: 350px; }
-      #searchProduce #searchProduceFrame .search-5lux #search {
-        width: 264px;
-        height: 34px;
-        border: 2px solid #c69c6d;
-        color: #bbbbbb;
-        float: left; }
-      #searchProduce #searchProduceFrame .search-5lux #btn {
-        width: 82px;
-        height: 38px;
-        background: #C69C6D;
-        color: #fff;
-        border: none;
-        float: left; }
-      #searchProduce #searchProduceFrame .search-5lux .tips-5lux {
-        margin-top: 10px;
-        float: left;
-        list-style: none;
-        padding-left: 2px; }
-        #searchProduce #searchProduceFrame .search-5lux .tips-5lux li {
-          float: left;
-          font-size: 12px;
-          color: #999999;
-          margin-right: 25px; }
-    #searchProduce #searchProduceFrame .oversea-5lux {
+    #searchProduce #searchProduceFrame .search-5lux #btn {
+      width: 82px;
+      height: 38px;
+      background: #C69C6D;
+      color: #fff;
+      border: none;
+      float: left; }
+    #searchProduce #searchProduceFrame .search-5lux .tips-5lux {
+      margin-top: 10px;
       float: left;
-      width: 200px;
-      background: url(../src/images/overseadef.jpg) no-repeat;
-      margin: 40px 0 0 50px; }
-    #searchProduce #searchProduceFrame .shopping-cart {
-      background: url(../src/images/v30cart.png) no-repeat;
-      background-position: 10px;
-      width: 84px;
-      height: 32px;
-      border: 1px solid #cccccc;
-      margin: 39px 0 0 50px;
-      font-size: 12px;
-      line-height: 32px;
-      color: #666; }
-      #searchProduce #searchProduceFrame .shopping-cart .total {
-        margin-left: 42px; }
-        #searchProduce #searchProduceFrame .shopping-cart .total .total-num {
-          color: red; }
-      #searchProduce #searchProduceFrame .shopping-cart strong {
-        float: right;
-        margin-right: 6px; }
-  #searchProduce .search-value {
-    width: 264px;
+      list-style: none;
+      padding-left: 2px; }
+      #searchProduce #searchProduceFrame .search-5lux .tips-5lux li {
+        float: left;
+        font-size: 12px;
+        color: #999999;
+        margin-right: 25px; }
+  #searchProduce #searchProduceFrame .oversea-5lux {
+    float: left;
+    width: 200px;
+    background: url(../src/images/overseadef.jpg) no-repeat;
+    margin: 40px 0 0 50px; }
+  #searchProduce #searchProduceFrame .shopping-cart {
+    background: url(../src/images/v30cart.png) no-repeat;
+    background-position: 10px;
+    width: 84px;
+    height: 32px;
     border: 1px solid #cccccc;
-    position: absolute;
-    color: #999999;
+    margin: 39px 0 0 50px;
     font-size: 12px;
-    left: 638px;
-    top: 184px;
-    list-style: none; }
+    line-height: 32px;
+    color: #666; }
+    #searchProduce #searchProduceFrame .shopping-cart .total {
+      margin-left: 42px; }
+      #searchProduce #searchProduceFrame .shopping-cart .total .total-num {
+        color: red; }
+    #searchProduce #searchProduceFrame .shopping-cart strong {
+      float: right;
+      margin-right: 6px; }
+
+#searchProduce .search-value {
+  width: 264px;
+  border: 1px solid #cccccc;
+  position: absolute;
+  color: #999999;
+  font-size: 12px;
+  left: 638px;
+  top: 184px;
+  list-style: none; }
 
 #nav5lux {
   overflow: hidden;
@@ -218,7 +219,7 @@ a {
       float: right; }
       #nav5lux #productNavigation .oversea-service .first-back {
         float: left;
-        width: 100px;
+        width: 86px;
         height: 38px;
         margin-right: 264px;
         background: url(../src/images/overseaslogo.gif); }
@@ -226,18 +227,59 @@ a {
         width: 30px;
         height: 38px;
         position: absolute;
-        right: 235px;
+        right: 225px;
         background: url(../src/images/share02.png) -237px -66px; }
       #nav5lux #productNavigation .oversea-service .third-back {
         width: 30px;
         height: 38px;
         position: absolute;
-        right: 200px;
+        right: 195px;
         background: url(../src/images/share02.png) -296px -66px; }
       #nav5lux #productNavigation .oversea-service .forth-back {
         width: 20px;
         height: 38px;
         position: absolute;
-        right: 158px;
+        right: 155px;
         padding-right: 20px;
         background: url(../src/images/share02.png) -354px -66px; }
+
+#imageBanner .image-list {
+  border-top: 1px solid #635F60;
+  height: 520px; }
+  #imageBanner .image-list #left, #imageBanner .image-list #right {
+    width: 40px;
+    height: 520px;
+    background: black;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 1000; }
+  #imageBanner .image-list #right {
+    right: 0; }
+  #imageBanner .image-list #btnLeft {
+    z-index: 1000;
+    width: 30px;
+    height: 50px;
+    background: url(../src/images/templateleft.png);
+    display: block;
+    position: absolute;
+    top: 457px;
+    left: 260px; }
+  #imageBanner .image-list #btnRight {
+    z-index: 1000;
+    width: 30px;
+    height: 50px;
+    background: url(../src/images/templateright.png);
+    display: block;
+    position: absolute;
+    top: 457px;
+    right: 260px; }
+  #imageBanner .image-list li {
+    height: 520px;
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    width: 100%; }
+    #imageBanner .image-list li img {
+      width: 100%;
+      z-index: 999;
+      top: 257px; }

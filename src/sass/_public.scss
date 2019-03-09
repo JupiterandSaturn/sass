@@ -193,13 +193,14 @@ a{
 
 //搜索框
 #searchProduce{
-    overflow: hidden;
+    
     #searchProduceFrame{
-        
+        height:108px;
+        overflow: hidden;
         margin-left:10%;
         div{
           
-            height:68px;
+            height:96px;
             float: left;
         }
         .logo-5lux{
@@ -340,7 +341,7 @@ a{
           
             .first-back{
                 float:left;
-                width:100px;
+                width:86px;
                 height:38px;
                 margin-right:264px;
                background: url(../src/images/overseaslogo.gif);
@@ -351,21 +352,21 @@ a{
                 width:30px;
                 height:38px;
                 position:absolute;
-                right:235px;
+                right:225px;
                 background: url(../src/images/share02.png)  -237px -66px;
             }
             .third-back{
                    width:30px;
                 height:38px;
                  position:absolute;
-                right:200px;
+                right:195px;
                 background: url(../src/images/share02.png)  -296px -66px;
             }
             .forth-back{
                    width:20px;
                 height:38px;
                  position:absolute;
-                right:158px;
+                right:155px;
                 padding-right:20px;
                 background: url(../src/images/share02.png)  -354px -66px;
             }
@@ -373,3 +374,4 @@ a{
         
     }
   }
+

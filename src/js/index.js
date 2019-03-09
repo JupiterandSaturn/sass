@@ -69,5 +69,66 @@ $(function(){
 		$searchvalue.css('display','none');
 	})
 	
+//	banner轮播图
+	$imageBanner = $('#imageBanner .image-list li');
+	$btnLeft = $('#btnLeft');
+	$btnRight = $('#btnRight');
+	var index = 5;
+	var timer = null;
+	
+	$btnLeft.mouseenter(function(){
+		clearInterval(timer);
+	})
+	
+	$btnRight.mouseenter(function(){
+		clearInterval(timer);
+	})
+	$btnLeft.mouseleave(function(){
+		autoPlay();
+	})
+	$btnRight.mouseleave(function(){
+		autoPlay();
+	})
+	
+	
+	$btnLeft.click(function(){
+		index --;
+		if(index === -1){
+			index = $imageBanner.size() - 1;
+		}
+		slide();
+	})
+	
+	$btnRight.click(function(){
+		index ++;
+		if(index === $imageBanner.size()){
+			index = 0;
+		}
+		slide();
+	})
+	
+	slide();
+	autoPlay();
+	function slide(){
+		
+		//$imageBanner.eq(index).fadeIn(1500).siblings().fadeOut(1500);
+		$imageBanner.eq(index).animate({left:'-100%'},1000);
+		if(index == 0){
+			$imageBanner.css('left','0');
+		}else {
+			$imageBanner.eq(0).css('left','0');
+			
+		}
+		
+	}
+	function autoPlay(){
+		timer = setInterval(function(){
+			index--;
+			if(index === -1){
+				index = $imageBanner.size() - 1;
+			}
+			slide();
+		},3000)
+	}
 	
 })
