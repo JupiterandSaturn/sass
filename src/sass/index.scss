@@ -1,58 +1,180 @@
 @import 'public';
+//banner轮播
+#imageBanner {
+    overflow: hidden;
+    .image-list {
+        border-top: 1px solid #635F60;
+        height: 520px;
+        #left,
+        #right {
+            width: 40px;
+            height: 520px;
+            background: black;
+            opacity: 0.3;
+            position: absolute;
+            z-index: 1000;
+        }
+        #right {
+            right: 0;
+        }
+        #btnLeft {
+            z-index: 1000;
+            width: 30px;
+            height: 50px;
+            background: url(../src/images/templateleft.png);
+            display: block;
+            position: absolute;
+            top: 457px;
+            left: 260px;
+        }
+        #btnRight {
+            z-index: 1000;
+            width: 30px;
+            height: 50px;
+            background: url(../src/images/templateright.png);
+            display: block;
+            position: absolute;
+            top: 457px;
+            right: 260px;
+        }
+        li {
+            height: 520px;
+            z-index: 999;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            img {
+                width: 100%;
+                z-index: 999;
+                top: 257px;
+            }
+        }
+    }
+    .border-index {
+        position: absolute;
+        z-index: 999;
+        width: 160px;
+        left: 678px;
+        list-style: none;
+        li {
+            float: left;
+            margin: 0 6px;
+            border: 1px solid white;
+            width: 10px;
+            height: 10px;
+            background: white;
+            border-radius: 50%;
+        }
+    }
+}
 
-  //banner
-
-#imageBanner{
-    .image-list{
-        border-top:1px solid #635F60;
-        height:520px;
-       #left,#right{
-           width:40px;
-           height:520px;
-           background:black;
-           opacity: 0.3;
-           position:absolute;
-           z-index: 1000;
-          
-       }
-       #right{
-           right:0;
-       }
-       #btnLeft{
-           z-index: 1000;
-           width:30px;
-           height:50px;
-           background: url(../src/images/templateleft.png);
-           display: block;
-           position:absolute;
-           top:457px;
-           left:260px;
-       }
-        #btnRight{
-           z-index: 1000;
-           width:30px;
-           height:50px;
-           background: url(../src/images/templateright.png);
-           display: block;
-           position:absolute;
-           top:457px;
-           right:260px;
-       }
-      
-           li{
-               height:520px;
-               z-index: 999;
-               position:absolute;
-               left:0;
-               width:100%;
-            img{
-                width:100%;
-               z-index: 999;
-               top:257px;
-              
-              }
+//flagship brand旗舰店
+#flagShipBrand {
+    width: 100%;
+    .logo-pic {
+        height: 120px;
+        background: url(../src/images/mainx_brandship.png)no-repeat;
+        margin: 70px 0 0 10%;
+    }
+    .bland-pic {
+        overflow: hidden;
+        margin-left: 10%;
+        height: 330px;
+        list-style: none;
+        li {
+            float: left;
+            height: 330px;
+            width: 234px;
+            background: url(../src/images/150753271894_236x329.jpg) no-repeat;
+            margin: 0 5px;
+            position: relative;
+            overflow: hidden;
+            span {
+                width: 174px;
+                height: 150px;
+                background: white;
+                display: block;
+                position: absolute;
+                left: 30px;
+                top: 260px;
+                //top:180px;
+                text-align: center;
+                img {
+                    width: 60px;
+                    height: 36px;
+                    margin-top: 10px;
+                }
+                p {
+                    width: 20px;
+                    height: 1px;
+                    background: #000000;
+                    border: 1px solid #000000;
+                    margin-left: 77px;
+                }
+                h4 {
+                    font-weight: normal;
+                }
+                h4:first-of-type {
+                    margin-top: 26px;
+                }
+            }
+        }
+    }
+    .hot-store {
+        overflow: hidden;
+        margin: 0 10%;
+        height: 60px;
+        span {
+            background: url(../src/images/hotstore_t.jpg) no-repeat;
+            height: 60px;
+            width: 240px;
+            display: inline-block;
+        }
+        .right,
+        .left {
+            float: right;
+            margin: 0 6px;
+            height: 60px;
+            line-height: 60px;
+        }
+    }
+    #smallBland {
+        width:1208px;
+        height:176px;
+        margin-left: 10%;
+         overflow: hidden;
+         position: absolute;
+        .bland-list {
            
-       }
-       
+            position: absolute;
+            height: 176px;
+            width: 3000px;
+            
+            list-style: none;
+            div {
+                height: 176px;
+                width: 164px;
+                float: left;
+                margin: 0 4px;
+                li {
+                    width: 164px;
+                    height: 84px;
+                    border: 1px solid #dfdfdf;
+                    text-align: center;
+                    img {
+                        width: 108px;
+                        height: 54px;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    span {
+                        height: 100%;
+                        display: inline-block;
+                        width: 0;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
     }
 }
