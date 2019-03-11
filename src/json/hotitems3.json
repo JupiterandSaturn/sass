@@ -1,0 +1,43 @@
+[
+{
+	"english" : "Versace",
+	"chinese" : "范思哲",
+	"price" : "2674",
+	"src" : "../images/155044736881_1320x1320_800x800.jpg"
+},
+{
+	"english" : "Gucci",
+	"chinese" : "古驰",
+	"price" : "3616",
+	"src" : "../images/155165096836_989x1320_800x800.jpg"
+},
+{
+	"english" : "Givenchy",
+	"chinese" : "纪梵希",
+	"price" : "6353",
+	"src" : "../images/155010060850_384x580_800x800.jpg"
+},
+
+{
+	"english" : "PINKO",
+	"chinese" : "Pinko",
+	"price" : "1979",
+	"src" : "../images/155010057161_1571x2000.JPG"
+},
+
+{
+	"english" : "YVES SAINT LAURENT",
+	"chinese" : "",
+	"price" : "540",
+	"src" : "../images/155054696388_1000x1000_800x800.jpg"
+},
+
+{
+	"english" : "Calvin Klein",
+	"chinese" : "卡尔文.克莱恩",
+	"price" : "3849",
+	"src" : "../images/155071932543_1571x2000.JPG"
+}
+
+
+	]

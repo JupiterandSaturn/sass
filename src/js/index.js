@@ -1,5 +1,9 @@
 $(function() {
-
+	$autobottom = $('.auto-bottom');
+	$autoMark = $('.auto-bottom .mark');
+	$autoMark.click(function(){
+		$autobottom.css('display','none');
+	})
 	//	banner轮播图
 	$imageBanner = $('#imageBanner .image-list li');
 	$borderindex = $('#imageBanner .border-index li');
@@ -54,11 +58,12 @@ $(function() {
 			$imageBanner.eq(0).css('left', '0');
 			$borderindex.eq(0).css({background:'white',border:'1px solid white'});
 		}
-
+		
 		$borderindex.eq(index).css({
 			'background': 'red',
 			'border': '1px solid red'
 		});
+		
 
 	}
 
@@ -91,31 +96,55 @@ $(function() {
 	$SmallBtnLeft = $('#flagShipBrand .hot-store .right');
 	$SmallBtnRight = $('#flagShipBrand .hot-store .left');
 	$smallpic = $('#flagShipBrand .bland-list');
+	
 	$SmallBtnLeft.click(function(){
 		$smallpic.animate({
 			left: '-1203px'
 			
 		}, 1000);
-		$SmallBtnLeft.click(function() {
-		$smallpic.animate({
-			left: '0'
-			
-		}, 1000);
 		
 	})
-	})
+	
 	
 	$SmallBtnRight.click(function() {
 		$smallpic.animate({
-			left: '-1203px'
-		}, 1000);
-		$SmallBtnRight.click(function() {
-		$smallpic.animate({
-			left: '-2406px'
+			left: '0px'
 			
 		}, 1000);
 		
 	})
+	
+	$oLi = $('.select-card li');
+	$.each($oLi,function(i,value){
+		$(this).mouseenter(function(){
+		
+		
+			var ajax = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiceXObject("Microsoft.XMLHTTP");
+	ajax.open('get','../src/json/hotitems'+(i+1)+'.json?t=' + new Date().getTime());
+	ajax.send();
+	ajax.onreadystatechange = function(){
+		if(ajax.readyState == 4 && ajax.status == 200){
+			var arr = JSON.parse(ajax.responseText);
+			var str = '';
+			for(var i = 0;i < arr.length;i++){
+				str += `<li>
+								<strong>${arr[i].english}</strong>
+								<p>${arr[i].chinese}</p>
+								<span><b>￥</b>${arr[i].price}</span>
+								<img src="../src/json/${arr[i].src}"/>
+							</li>`;
+			}
+			$id(".produce-list").innerHTML = str;
+		}
+	}
+		})
+	
 	})
 	
+	
+
+	
 })
+function $id(id) {
+	return document.querySelector(id);
+}
