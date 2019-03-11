@@ -1,389 +1,532 @@
 <!DOCTYPE html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<link rel="stylesheet" type="text/css" href="../dist/index.min.css" />
-		<script src="js/jquery-1.11.3.js"></script>
-		<script src="js/produce.js"></script>
-		<script src="js/public.js"></script>
-	</head>
 
-	<body>
-		<!--header头部-->
-		<header>
-			<div id="businessCard"></div>
-			<!--登录注册在这里-->
-			<div id="userNavigation">
-				<div class="user-NavigationFrame">
-					<ul class="index-Navigation">
-						<li class="project-index">
-							<a href=""><img src="images/home.png" />第五大道首页</a>
-						</li>
-						<li class="phone-number">
-							<a href="">贵宾专线：4008-6767-38</a>
-						</li>
-					</ul>
-					<ol class="user-message">
-						<li class="user-login">
-							<a href="">登录</a>
-						</li>
-						<li class="user-register"><span class="present-register"></span>
-							<a href="">注册</a>
-						</li>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../dist/produce.min.css" />
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/produce.js"></script>
+	<script src="js/public.js"></script>
+</head>
 
-						<li class="select-5lux">
-							<a class="select-next" href="">我的第五大道<span></span></a>
-						</li>
+<body>
+	<!--header头部-->
+	<header>
+		<div id="businessCard"></div>
+		<!--登录注册在这里-->
+		<div id="userNavigation">
+			<div class="user-NavigationFrame">
+				<ul class="index-Navigation">
+					<li class="project-index">
+						<a href=""><img src="images/home.png" />第五大道首页</a>
+					</li>
+					<li class="phone-number">
+						<a href="">贵宾专线：4008-6767-38</a>
+					</li>
+				</ul>
+				<ol class="user-message">
+					<li class="user-login">
+						<a href="">登录</a>
+					</li>
+					<li class="user-register"><span class="present-register"></span>
+						<a href="">注册</a>
+					</li>
 
-						<li class="user-help">
-							<a href="">帮助中心</a>
-						</li>
-						<li class="phone-download">
-							<a href="">手机版下载</a><span></span></li>
+					<li class="select-5lux">
+						<a class="select-next" href="">我的第五大道<span></span></a>
+					</li>
 
+					<li class="user-help">
+						<a href="">帮助中心</a>
+					</li>
+					<li class="phone-download">
+						<a href="">手机版下载</a><span></span></li>
+
+				</ol>
+
+			</div>
+			<dl class="phone-erweima">
+				<dt></dt>
+				<dd>扫描下载APP</dd>
+				<dd>立即<span>赠送50元</span></dd>
+			</dl>
+			<dl class="list-5lux">
+				<dd>
+					<a href="">我的订单</a>
+				</dd>
+				<dd>
+					<a href="">我的收藏</a>
+				</dd>
+				<dd>
+					<a href="">已购商品</a>
+				</dd>
+				<dd>
+					<a href="">我的礼券</a>
+				</dd>
+				<dd>
+					<a href="">我的积分</a>
+				</dd>
+			</dl>
+		</div>
+
+		<!--search头部搜索部分-->
+		<div id="searchProduce">
+			<div id="searchProduceFrame">
+				<div class="logo-5lux"></div>
+				<div class="slogan-5lux"></div>
+				<div class="search-5lux">
+					<input type="text" name="search" id="search" value="" placeholder="太阳镜" />
+					<input type="button" name="btn" id="btn" value="搜索" />
+
+					<ol class="tips-5lux">
+						<li>
+							<a href="">连衣裙</a>
+						</li>
+						<li>
+							<a href="">美妆</a>
+						</li>
+						<li>
+							<a href="">运动户外</a>
+						</li>
+						<li>
+							<a href="">箱包</a>
+						</li>
+						<li>
+							<a href="">腕表</a>
+						</li>
 					</ol>
-
 				</div>
-				<dl class="phone-erweima">
-					<dt></dt>
-					<dd>扫描下载APP</dd>
-					<dd>立即<span>赠送50元</span></dd>
-				</dl>
-				<dl class="list-5lux">
-					<dd>
-						<a href="">我的订单</a>
-					</dd>
-					<dd>
-						<a href="">我的收藏</a>
-					</dd>
-					<dd>
-						<a href="">已购商品</a>
-					</dd>
-					<dd>
-						<a href="">我的礼券</a>
-					</dd>
-					<dd>
-						<a href="">我的积分</a>
-					</dd>
-				</dl>
-			</div>
+				<ul class="search-value">
 
-			<!--search头部搜索部分-->
-			<div id="searchProduce">
-				<div id="searchProduceFrame">
-					<div class="logo-5lux"></div>
-					<div class="slogan-5lux"></div>
-					<div class="search-5lux">
-						<input type="text" name="search" id="search" value="" placeholder="太阳镜" />
-						<input type="button" name="btn" id="btn" value="搜索" />
-
-						<ol class="tips-5lux">
-							<li>
-								<a href="">连衣裙</a>
-							</li>
-							<li>
-								<a href="">美妆</a>
-							</li>
-							<li>
-								<a href="">运动户外</a>
-							</li>
-							<li>
-								<a href="">箱包</a>
-							</li>
-							<li>
-								<a href="">腕表</a>
-							</li>
-						</ol>
-					</div>
-					<ul class="search-value">
-
-					</ul>
-					<div class="oversea-5lux"></div>
-					<div class="shopping-cart">
-						<div class="total">(<span class="total-num">0</span>)</div>
-						<strong>&gt</strong>
-					</div>
-
-				</div>
-			</div>
-			
-			<div id="shoppingOne">
-				<p>购物袋暂时没有商品，<br>赶紧选择心爱的商品吧！</p>
-			</div>
-			<div id="shoppingTwo">
-				
-			</div>
-			
-			
-			<div id="nav5lux">
-
-				<div id="productNavigation">
-					<ul class="produce-nav">
-						<li class="nav-list">
-							<a href="">商品分类</a>
-						</li>
-						<li>
-							<a href="">品牌</a>
-						</li>
-						<li>
-							<a href="">最新</a>
-						</li>
-						<li>
-							<a href="">女士</a>
-						</li>
-						<li>
-							<a href="">男士</a>
-						</li>
-						<li>
-							<a href="">生活馆</a>
-						</li>
-						<li>
-							<a href="">海外馆</a>
-						</li>
-						<li>
-							<a href="">时尚</a>
-						</li>
-						<li>
-							<a href="">特惠</a>
-						</li>
-						<li>
-							<a href="">礼品区</a>
-						</li>
-						<li>
-							<a href="">到店</a>
-						</li>
-					</ul>
-					<div class="oversea-service">
-						<div class="first-back"></div>
-						<div class="second-back"></div>
-						<div class="third-back"></div>
-						<div class="forth-back"></div>
-					</div>
+				</ul>
+				<div class="oversea-5lux"></div>
+				<div class="shopping-cart">
+					<div class="total">(<span class="total-num">0</span>)</div>
+					<strong>&gt</strong>
 				</div>
 
 			</div>
-			<div class="banner-Mark"></div>
-			<ul id="selectList">
-				<li class="first-list">
-					<a href="">推荐品牌</a>
-				</li>
-				<li class="first-list">
-					<a href="">箱包</a>
-				</li>
-				<li class="first-list">
-					<a href="">箱包</a>
-				</li>
-				<li class="first-list">
-					<a href="">箱包</a>
-				</li>
-				<li class="first-list">
-					<a href="">箱包</a>
-				</li>
-				<li class="first-list">
-					<a href="">箱包</a>
-				</li>
-				<li class="first-list">
-					<a href="">箱包</a>
-				</li>
-				<li class="first-list">
-					<a href="">箱包</a>
-				</li>
-				<li class="first-list">
-					<a href="">箱包</a>
-				</li>
-				<li class="first-list">
-					<a href="">箱包</a>
-				</li>
-				<li class="first-list">
-					<a href="">箱包</a>
-				</li>
-				<li class="first-list">
-					<a href="">箱包</a>
-				</li>
-				<li class="first-list">
-					<a href="">箱包</a>
-				</li>
-				<li class="first-list">
-					<a href="">箱包</a>
-				</li>
-				<li class="first-list">
-					<a href="">箱包</a>
+		</div>
+
+		<div id="shoppingOne">
+			<p>购物袋暂时没有商品，<br>赶紧选择心爱的商品吧！</p>
+		</div>
+		<div id="shoppingTwo">
+
+		</div>
+
+		<div id="nav5lux">
+
+			<div id="productNavigation">
+				<ul class="produce-nav">
+					<li class="nav-list">
+						<a href="">商品分类</a>
+					</li>
+					<li>
+						<a href="">品牌</a>
+					</li>
+					<li>
+						<a href="">最新</a>
+					</li>
+					<li>
+						<a href="">女士</a>
+					</li>
+					<li>
+						<a href="">男士</a>
+					</li>
+					<li>
+						<a href="">生活馆</a>
+					</li>
+					<li>
+						<a href="">海外馆</a>
+					</li>
+					<li>
+						<a href="">时尚</a>
+					</li>
+					<li>
+						<a href="">特惠</a>
+					</li>
+					<li>
+						<a href="">礼品区</a>
+					</li>
+					<li>
+						<a href="">到店</a>
+					</li>
+				</ul>
+				<div class="oversea-service">
+					<div class="first-back"></div>
+					<div class="second-back"></div>
+					<div class="third-back"></div>
+					<div class="forth-back"></div>
+				</div>
+			</div>
+
+		</div>
+		<div class="banner-Mark"></div>
+		<ul id="selectList">
+			<li class="first-list">
+				<a href="">推荐品牌</a>
+			</li>
+			<li class="first-list">
+				<a href="">箱包</a>
+			</li>
+			<li class="first-list">
+				<a href="">箱包</a>
+			</li>
+			<li class="first-list">
+				<a href="">箱包</a>
+			</li>
+			<li class="first-list">
+				<a href="">箱包</a>
+			</li>
+			<li class="first-list">
+				<a href="">箱包</a>
+			</li>
+			<li class="first-list">
+				<a href="">箱包</a>
+			</li>
+			<li class="first-list">
+				<a href="">箱包</a>
+			</li>
+			<li class="first-list">
+				<a href="">箱包</a>
+			</li>
+			<li class="first-list">
+				<a href="">箱包</a>
+			</li>
+			<li class="first-list">
+				<a href="">箱包</a>
+			</li>
+			<li class="first-list">
+				<a href="">箱包</a>
+			</li>
+			<li class="first-list">
+				<a href="">箱包</a>
+			</li>
+			<li class="first-list">
+				<a href="">箱包</a>
+			</li>
+			<li class="first-list">
+				<a href="">箱包</a>
+			</li>
+
+		</ul>
+		<div id="selectTwo">
+			<ul class="recommend-brand">
+				<li class="brand-title">国际高端</li>
+				<li class="brand-list">
+					<a href="">Prada</a>
+					<a href="">Burberry</a>
+					<a href="">Prada</a>
+					<a href="">Burberry</a>
+					<a href="">Prada</a>
+					<a href="">Burberry</a>
+					<a href="">Prada</a>
+					<a href="">Burberry</a>
+					<a href="">Gucci</a>
+					<a href="">Burberry</a>
+					<a href="">Prada</a>
+					<a href="">Burberry</a>
+					<a href="">Prada</a>
+					<a href="">Burberry</a>
+					<a href="">Prada</a>
+					<a href="">Burberry</a>
 				</li>
 
 			</ul>
-			<div id="selectTwo">
-				<ul class="recommend-brand">
-					<li class="brand-title">国际高端</li>
-					<li class="brand-list">
-						<a href="">Prada</a>
-						<a href="">Burberry</a>
-						<a href="">Prada</a>
-						<a href="">Burberry</a>
-						<a href="">Prada</a>
-						<a href="">Burberry</a>
-						<a href="">Prada</a>
-						<a href="">Burberry</a>
-						<a href="">Gucci</a>
-						<a href="">Burberry</a>
-						<a href="">Prada</a>
-						<a href="">Burberry</a>
-						<a href="">Prada</a>
-						<a href="">Burberry</a>
-						<a href="">Prada</a>
-						<a href="">Burberry</a>
-					</li>
+			<ul class="recommend-brand">
+				<li class="brand-title">国际高端</li>
+				<li class="brand-list">
+					<a href="">Prada</a>
+					<a href="">Burberry</a>
+					<a href="">Prada</a>
+					<a href="">Burberry</a>
+					<a href="">Prada</a>
+					<a href="">Burberry</a>
+					<a href="">Prada</a>
+					<a href="">Burberry</a>
+					<a href="">Gucci</a>
+					<a href="">Burberry</a>
+					<a href="">Prada</a>
+					<a href="">Burberry</a>
+					<a href="">Prada</a>
+					<a href="">Burberry</a>
+					<a href="">Prada</a>
+					<a href="">Burberry</a>
+				</li>
 
-				</ul>
-				<ul class="recommend-brand">
-					<li class="brand-title">国际高端</li>
-					<li class="brand-list">
-						<a href="">Prada</a>
-						<a href="">Burberry</a>
-						<a href="">Prada</a>
-						<a href="">Burberry</a>
-						<a href="">Prada</a>
-						<a href="">Burberry</a>
-						<a href="">Prada</a>
-						<a href="">Burberry</a>
-						<a href="">Gucci</a>
-						<a href="">Burberry</a>
-						<a href="">Prada</a>
-						<a href="">Burberry</a>
-						<a href="">Prada</a>
-						<a href="">Burberry</a>
-						<a href="">Prada</a>
-						<a href="">Burberry</a>
-					</li>
+			</ul>
+			<ul class="recommend-brand">
+				<li class="brand-title">国际高端</li>
+				<li class="brand-list">
+					<a href="">Prada</a>
+					<a href="">Burberry</a>
+					<a href="">Prada</a>
+					<a href="">Burberry</a>
+					<a href="">Prada</a>
+					<a href="">Burberry</a>
+					<a href="">Prada</a>
+					<a href="">Burberry</a>
+					<a href="">Gucci</a>
+					<a href="">Burberry</a>
+					<a href="">Prada</a>
+					<a href="">Burberry</a>
+					<a href="">Prada</a>
+					<a href="">Burberry</a>
+				</li>
 
-				</ul>
-				<ul class="recommend-brand">
-					<li class="brand-title">国际高端</li>
-					<li class="brand-list">
-						<a href="">Prada</a>
-						<a href="">Burberry</a>
-						<a href="">Prada</a>
-						<a href="">Burberry</a>
-						<a href="">Prada</a>
-						<a href="">Burberry</a>
-						<a href="">Prada</a>
-						<a href="">Burberry</a>
-						<a href="">Gucci</a>
-						<a href="">Burberry</a>
-						<a href="">Prada</a>
-						<a href="">Burberry</a>
-						<a href="">Prada</a>
-						<a href="">Burberry</a>
-					</li>
+			</ul>
+			<div class="enter-brand">
+				<a href="">进入所有品牌</a>
+			</div>
+		</div>
+	</header>
+	<article>
+		<div id="productDetail">
+			<div class="product-pic">
+				<div class="product-big-pic">
+					<img src="../src/images/155071932158_387x490.JPG" />
+					<span></span>
+				</div>
+				<div class="product-list-pic">
 
-				</ul>
-				<div class="enter-brand">
-					<a href="">进入所有品牌</a>
+					<div class="left-btn"></div>
+					<ul class="product-small-pic">
+						<li><img src="../src/images/155071932158_387x490.JPG" /></li>
+						<li><img src="../src/images/155071932366_387x490.JPG" /></li>
+
+					</ul>
+					<div class="right-btn"></div>
+				</div>
+				<ol class="product-select-next">
+					<li class="first-select">
+						<a href="">分享</a>
+					</li>
+					<li class="second-select">
+						<a href="">收藏（已有1336人收藏）</a>
+					</li>
+				</ol>
+			</div>
+			<div id="productMessage">
+				<div class="product-intro">
+					<!--<div class="product-intro-first">
+						<p></p>
+						<p></p>
+						<p></p>
+					</div>-->
+					<!--<div class="product-intro-second">
+						<span ></span>
+						<del>￥11163</del>
+						<span></span>
+						<div></div>
+						<span id="">分期价</span>
+						<p><span></span></p>
+					</div>-->
+				</div>
+				<div class="product-next-detail">
+					<div class="product-intro-third">
+						<ul class="select-size">
+							<li><span>颜色</span>
+								<div class="product-color"><a href="javascript:;">白色</a></div>
+							</li>
+							<li><span>大小</span>
+								<div class="product-size"><a href="javascript:;">L INT</a></div>
+								<div class="product-size"><a href="javascript:;">M INT</a></div>
+								<div class="product-size"><a href="javascript:;">S INT</a></div>
+							</li>
+							<li><span>数量</span>
+								<div>
+									<a href=""></a><input type="text" name="txt" id="txt" value="1" />
+									<a href=""></a>
+								</div>
+							</li>
+						</ul>
+
+					</div>
 				</div>
 			</div>
-		</header>
-		
-		
-		
-		
-		<footer>
-			<div id="selectService">
-				<hr />
-				<ul class="select-list">
-					<!--<li>
+
+		</div>
+		</div>
+	</article>
+
+	<footer>
+		<div id="selectService">
+			<hr />
+			<ul class="select-list">
+				<!--<li>
 						<div class="select-pic">
 							<img src="../src/json/"/>
 						</div>
 						<strong></strong>
 						<a href=""></a>
 					</li>-->
+			</ul>
+		</div>
+		<div id="selectServiceTwo">
+
+			<div class="select-service-two">
+
+				<dl>
+					<dt>使用帮助</dt>
+					<dd>
+						<a href="">常见问题</a>
+					</dd>
+					<dd>
+						<a href="">会员制度</a>
+					</dd>
+					<dd>
+						<a href="">集团采购</a>
+					</dd>
+					<dd>
+						<a href="">礼品卡</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>使用帮助</dt>
+					<dd>
+						<a href="">常见问题</a>
+					</dd>
+					<dd>
+						<a href="">会员制度</a>
+					</dd>
+					<dd>
+						<a href="">集团采购</a>
+					</dd>
+					<dd>
+						<a href="">礼品卡</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>使用帮助</dt>
+					<dd>
+						<a href="">常见问题</a>
+					</dd>
+					<dd>
+						<a href="">会员制度</a>
+					</dd>
+					<dd>
+						<a href="">集团采购</a>
+					</dd>
+					<dd>
+						<a href="">礼品卡</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>使用帮助</dt>
+					<dd>
+						<a href="">常见问题</a>
+					</dd>
+					<dd>
+						<a href="">会员制度</a>
+					</dd>
+					<dd>
+						<a href="">集团采购</a>
+					</dd>
+					<dd>
+						<a href="">礼品卡</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>使用帮助</dt>
+					<dd>
+						<a href="">常见问题</a>
+					</dd>
+					<dd>
+						<a href="">会员制度</a>
+					</dd>
+					<dd>
+						<a href="">集团采购</a>
+					</dd>
+					<dd>
+						<a href="">礼品卡</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>第五大道APP</dt>
+					<dd><img src="../src/images/footer_message07.jpg" /></dd>
+
+				</dl>
+				<dl>
+					<dt>第五大道微博</dt>
+					<dd><img src="../src/images/footer_message06.jpg" /></dd>
+
+				</dl>
+
+			</div>
+		</div>
+		<div id="serviceBottom">
+			<div class="service-bottom">
+				<ul class="service-intro">
+					<li>
+						<a href="">箱包</a>
+					</li>
+					<li>
+						<a href="">美妆</a>
+					</li>
+					<li>
+						<a href="">箱包</a>
+					</li>
+					<li>
+						<a href="">美妆</a>
+					</li>
+					<li>
+						<a href="">箱包</a>
+					</li>
+					<li>
+						<a href="">美妆</a>
+					</li>
+					<li>
+						<a href="">箱包</a>
+					</li>
+					<li>
+						<a href="">礼品区</a>
+					</li>
+				</ul>
+				<ol>
+					<li>
+						<a href="">关于第五大道</a>
+					</li>
+					<li>
+						<a href="">地图导航</a>
+					</li>
+					<li>
+						<a href="">关于第五大道</a>
+					</li>
+					<li>
+						<a href="">地图导航</a>
+					</li>
+					<li>
+						<a href="">关于第五大道</a>
+					</li>
+					<li>
+						<a href="">地图导航</a>
+					</li>
+					<li>
+						<a href="">第五大道</a>
+					</li>
+					<li>
+						<a href="">地图导航</a>
+					</li>
+					<li>
+						<a href="">地图导航</a>
+					</li>
+					<li>
+						<a href="">第五大道</a>
+					</li>
+					<li>
+						<a href="">地图导航</a>
+					</li>
+				</ol>
+				<p>Copyright&nbsp;&nbsp;<span>&copy;</span>&nbsp;&nbsp;2008-2016瑞美嘉信国际信息技术(北京)有限公司瑞美嘉信国际信息技术(北京)有限公司瑞美嘉信国际信息技术(北京)有限公司</p>
+				<ul class="footer-pic">
+					<li class="first-pic"></li>
+					<li class="second-pic"></li>
+					<li class="third-pic"></li>
 				</ul>
 			</div>
-			<div id="selectServiceTwo">
-				
-				<div class="select-service-two">
-					
-					
-					<dl>
-						<dt>使用帮助</dt>
-						<dd><a href="">常见问题</a></dd>
-						<dd><a href="">会员制度</a></dd>
-						<dd><a href="">集团采购</a></dd>
-						<dd><a href="">礼品卡</a></dd>
-					</dl>
-						<dl>
-						<dt>使用帮助</dt>
-						<dd><a href="">常见问题</a></dd>
-						<dd><a href="">会员制度</a></dd>
-						<dd><a href="">集团采购</a></dd>
-						<dd><a href="">礼品卡</a></dd>
-					</dl>
-						<dl>
-						<dt>使用帮助</dt>
-						<dd><a href="">常见问题</a></dd>
-						<dd><a href="">会员制度</a></dd>
-						<dd><a href="">集团采购</a></dd>
-						<dd><a href="">礼品卡</a></dd>
-					</dl>
-						<dl>
-						<dt>使用帮助</dt>
-						<dd><a href="">常见问题</a></dd>
-						<dd><a href="">会员制度</a></dd>
-						<dd><a href="">集团采购</a></dd>
-						<dd><a href="">礼品卡</a></dd>
-					</dl>
-						<dl>
-						<dt>使用帮助</dt>
-						<dd><a href="">常见问题</a></dd>
-						<dd><a href="">会员制度</a></dd>
-						<dd><a href="">集团采购</a></dd>
-						<dd><a href="">礼品卡</a></dd>
-					</dl>
-					<dl>
-						<dt>第五大道APP</dt>
-						<dd><img src="../src/images/footer_message07.jpg"/></dd>
-						
-					</dl>
-					<dl>
-						<dt>第五大道微博</dt>
-						<dd><img src="../src/images/footer_message06.jpg"/></dd>
-						
-					</dl>
-					
-				</div>
-			</div>
-			<div id="serviceBottom">
-				<div class="service-bottom">
-					<ul class="service-intro">
-						<li><a href="">箱包</a></li>
-						<li><a href="">美妆</a></li>
-						<li><a href="">箱包</a></li>
-						<li><a href="">美妆</a></li>
-						<li><a href="">箱包</a></li>
-						<li><a href="">美妆</a></li>
-						<li><a href="">箱包</a></li>
-						<li><a href="">礼品区</a></li>
-					</ul>
-					<ol>
-						<li><a href="">关于第五大道</a></li>
-						<li><a href="">地图导航</a></li>
-						<li><a href="">关于第五大道</a></li>
-						<li><a href="">地图导航</a></li>
-						<li><a href="">关于第五大道</a></li>
-						<li><a href="">地图导航</a></li>
-						<li><a href="">第五大道</a></li>
-						<li><a href="">地图导航</a></li>
-						<li><a href="">地图导航</a></li>
-						<li><a href="">第五大道</a></li>
-						<li><a href="">地图导航</a></li>
-					</ol>
-					<p>Copyright&nbsp;&nbsp;<span>&copy;</span>&nbsp;&nbsp;2008-2016瑞美嘉信国际信息技术(北京)有限公司瑞美嘉信国际信息技术(北京)有限公司瑞美嘉信国际信息技术(北京)有限公司</p>
-					<ul class="footer-pic">
-						<li class="first-pic"></li>
-						<li class="second-pic"></li>
-						<li class="third-pic"></li>
-					</ul>
-				</div>
-			</div>
-		</footer>
-	</body>
+		</div>
+	</footer>
+</body>
+
 </html>
