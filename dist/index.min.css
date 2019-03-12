@@ -411,6 +411,7 @@ a {
 #selectServiceTwo {
   width: 100%;
   height: 283px;
+  overflow: hidden;
   background: url(../src/images/footer_message_bg.jpg) no-repeat 0 -115px; }
   #selectServiceTwo .select-service-two {
     margin-left: 10%;
@@ -434,6 +435,7 @@ a {
     padding: 0; }
 
 #serviceBottom {
+  overflow: hidden;
   width: 100%;
   background: #140b0e; }
   #serviceBottom .service-bottom {

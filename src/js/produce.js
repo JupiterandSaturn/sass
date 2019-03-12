@@ -99,16 +99,15 @@ $(function() {
 		//$('.cart-alert').css('display', 'block');
 		location.href = '../src/shoppingcart.html';
 	})
-	
 
 	$buy = $('#addToCart');
 	$buy.click(function(event) {
 		//名称 价格 数量 src id
 		let id = $(this).parent().parent().siblings(".product-intro").attr('data-good-id');
 		let name = $(this).parent().parent().siblings(".product-intro").children(".product-intro-first").children(".product-name").html();
-		let price = $(this).parent().parent().siblings(".product-intro").children(".product-intro-second").children("#product-price").html();
+		let price = $(this).parent().parent().siblings(".product-intro").children(".product-intro-second").children('.product-span').children("#product-price").html();
 		let src = $(this).parent().parent().parent().siblings(".product-pic").children(".product-big-pic").children('img').attr('src');
-		
+
 		//获取cookie
 		//如果有返回字符串，如果没有返回undefined 统一成字符串
 		let cookieStr = $.cookie('cart') ? $.cookie('cart') : '';
@@ -147,7 +146,7 @@ $(function() {
 			expires: 7,
 			path: '/'
 		});
-	
+
 	})
 })
 //初始化购物车的数量

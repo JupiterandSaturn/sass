@@ -32,7 +32,7 @@ $(function() {
 				</ul>`;
 			$('.added-cart-list').append(str);
 		}
-		
+
 		$('.added-goods .list-image').css({
 			width: '80px',
 			height: '80px'

@@ -1,7 +1,9 @@
 @import 'public';
 #shoppingCartGoods {
     width: 100%;
+    overflow: hidden;
     ul {
+        overflow: hidden;
         list-style: none;
     }
     .cart-head {
