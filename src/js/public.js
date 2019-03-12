@@ -4,7 +4,24 @@ $(function() {
 		//这里还没添加跳转页面
 		location.href = "";
 	})
-
+	
+	//购物车侧栏
+	$cartLogo = $('#borderFixed .right-list li a');
+	$cartLogoList = $('#borderFixed .right-list');
+	$cartList = $('#borderFixed .cart-list');
+	$cartListClose = $('#borderFixed .cart-list .cart-title li a img');
+	$cartLogo.click(function(){
+		$cartLogoList.animate({right:'394px'},1000);
+		$cartList.animate({right:0},1000)
+	})
+	$cartListClose.click(function(){
+		$cartList.animate({right:'-394px'},1000)
+		$cartLogoList.animate({right:0},1000);
+	})
+	
+	
+	
+	
 	$select5lux = $('.select-5lux');
 	$list5lux = $('.list-5lux');
 	$list5luxa = $('.list-5lux dd a');

@@ -10,9 +10,9 @@ $(function() {
 			for(var i = 0; i < arr.length; i++) {
 				str += `
 			<div class="product-intro-first">
-						<p>${arr[i].english}${arr[i].chinese}</p>
+						<p class="product-name">${arr[i].english}${arr[i].chinese}</p>
 						<p>${arr[i].introduce}</p>
-						<p>${arr[i].id}</p>
+						<p class="product-id">${arr[i].id}</p>
 					</div>
 			<div class="product-intro-second">
 						<span id = "product-price">￥${arr[i].price}</span>
@@ -65,7 +65,7 @@ $(function() {
 			top = this.offsetHeight - floatLayer.offsetHeight;
 		}
 		floatLayer.style.left = left + 152 + 'px';
-		floatLayer.style.top = top + 272+ 'px';
+		floatLayer.style.top = top + 272 + 'px';
 
 		//求移动比例
 		let pX = left / (this.offsetWidth - floatLayer.offsetWidth);
@@ -73,11 +73,118 @@ $(function() {
 		//设置大图移动
 		productBigPic.style.left = pX * -(productBigPic.offsetWidth - productBigBox.offsetWidth) + 'px';
 		productBigPic.style.top = pY * -(productBigPic.offsetHeight - productBigBox.offsetHeight) + 'px';
-		
-	
+
 	}
 
+	//		<div class="product-intro-first">
+	//						<p class="product-name">${arr[i].english}${arr[i].chinese}</p>
+	//						<p>${arr[i].introduce}</p>
+	//						<p class="product-id">${arr[i].id}</p>
+	//					</div>
+	//			<div class="product-intro-second">
+	//						<span id = "product-price">￥${arr[i].price}</span>
+	//						<del>￥11163</del>
+	//						<span class="product-vip">红卡会员价</span>
+	//						<div></div>
+	//						<span class="product-fenqiprice">分期价</span>
+	//						<span class="product-message"><span class="product-last-price">￥344.81</span> x 12期 ></span>
+	//					</div>
+
+	//加入购物车
+	$('#addToCart').click(function() {
+		$('.cart-alert').css('display', 'block');
+	})
+
+	$buy = $('#addToCart');
+	$buy.click(function(event) {
+		//名称 价格 数量 src id
+		let id = $(this).parent().parent().siblings(".product-intro").children(".product-intro-first").children(".product-id");
+		let name = $(this).parent().parent().siblings(".product-intro").children(".product-intro-first").children(".product-name");
+		let price = $(this).parent().parent().siblings(".product-intro").children(".product-intro-second").children(".product-price");
+		let src = $(this).parent().parent().parent().children(".product-pic").children(".product-big-pic").children('img').attr('src');
+		//获取cookie
+		//如果有返回字符串，如果没有返回undefined 统一成字符串
+		let cookieStr = $.cookie('cart') ? $.cookie('cart') : '';
+		//cookie字符串转对象
+		let cookieObj = convertCookieStrToCookieObj(cookieStr);
+		//判断对象中是否存在我当前购买的商品
+		/*
+		 * {
+		 * 	 "sp1" : {
+		 * 		name : '。。。'，
+		 * 	    price : '....',
+		 * 		src : '....',
+		 *      num : '...'
+		 * 	},
+		 * "sp2" : {
+		 * 		name : '。。。'，
+		 * 	    price : '....',
+		 * 		src : '....',
+		 *      num : '...'
+		 * 	}
+		 * }
+		 * 
+		 */
+		if(id in cookieObj) {
+			cookieObj[id].num++;
+		} else {
+			cookieObj[id] = {
+				"name": name,
+				"price": price,
+				"src": src,
+				"num": 1
+			}
+		}
+		//加入cookie
+		$.cookie('cart', JSON.stringify(cookieObj), {
+			expires: 7,
+			path: '/'
+		});
+		//复制出一个img对象
+		$img = $(this).siblings('img').clone().css({
+			width: 50,
+			height: 50
+		});
+
+		$img.fly({
+			start: {
+				left: event.pageX, //开始位置（必填）#fly元素会被设置成position: fixed  
+				top: event.pageY //开始位置（必填）  
+			},
+			end: {
+				left: $('#buy').offset().left, //结束位置（必填）  
+				top: $('#buy').offset().top, //结束位置（必填）  
+				width: 0, //结束时宽度  
+				height: 0 //结束时高度  
+			},
+			onEnd: function() { //结束回调  
+				$img.remove(); //运动结束后删除
+				let num = parseInt(/(\d+)/.exec($('#buy').val())[1]);
+				$('#buy').val('购物车(' + (num + 1) + ')')
+			}
+		});
+	})
 })
+//初始化购物车的数量
+function cartInit() {
+	//获取cookie
+	let cookieStr = $.cookie('cart') ? $.cookie('cart') : '';
+	//转对象
+	let cookieObj = convertCookieStrToCookieObj(cookieStr);
+	let sum = 0;
+	//遍历对象
+	for(let key in cookieObj) {
+		sum += cookieObj[key].num;
+	}
+	$('#buy').val('购物车(' + sum + ')')
+}
+//将cookie字符串转为cookie对象
+function convertCookieStrToCookieObj(str) {
+	if(!str) {
+		return {};
+	}
+	return JSON.parse(str);
+}
 
 function $id(id) {
 	return document.querySelector(id);

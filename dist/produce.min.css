@@ -7,6 +7,50 @@
   height: 80px;
   background-image: url(../src/images/154288026284_1300x80.jpg); }
 
+#borderFixed {
+  width: 390px; }
+  #borderFixed .right-list {
+    position: fixed;
+    right: 0;
+    top: 212px;
+    z-index: 2000;
+    list-style: none; }
+    #borderFixed .right-list li a {
+      background: url(../src/images/share02.png) no-repeat -90px -160px;
+      background-color: #333333;
+      width: 36px;
+      height: 36px;
+      display: block;
+      margin: 2px 0;
+      border-radius: 15% 0 0 15%; }
+  #borderFixed .cart-list {
+    right: -396px;
+    width: 354px;
+    border-left: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-top: 1px solid #999;
+    height: 100%;
+    background: white;
+    position: fixed;
+    top: 0;
+    z-index: 2000;
+    padding: 0 20px; }
+    #borderFixed .cart-list .cart-title {
+      list-style: none; }
+      #borderFixed .cart-list .cart-title .cart-title-li {
+        border-bottom: 1px solid #999;
+        font-weight: bold; }
+        #borderFixed .cart-list .cart-title .cart-title-li span {
+          height: 54px;
+          line-height: 54px;
+          display: inline-block; }
+        #borderFixed .cart-list .cart-title .cart-title-li a {
+          float: right;
+          margin: 19px 20px 0 0; }
+      #borderFixed .cart-list .cart-title .cart-goods-list {
+        height: 400px;
+        text-align: center; }
+
 #userNavigation {
   overflow: hidden;
   height: 30px;
@@ -534,7 +578,6 @@ a {
   #productDetail #productMessage {
     height: 654px;
     width: 640px;
-    background: red;
     float: left;
     margin-left: 56px; }
     #productDetail #productMessage .product-intro {
@@ -629,7 +672,7 @@ a {
             margin: 0 2px; }
     #productDetail #productMessage .product-next-detail .product-intro-forth ul {
       list-style: none;
-      font-size: 10px;
+      font-size: 12px;
       color: #999; }
       #productDetail #productMessage .product-next-detail .product-intro-forth ul li {
         margin: 6px 0; }
@@ -638,3 +681,47 @@ a {
           margin-right: 40px; }
       #productDetail #productMessage .product-next-detail .product-intro-forth ul li:nth-of-type(2) span {
         margin-right: 50px; }
+    #productDetail #productMessage .product-next-detail .product-intro-forth #buy, #productDetail #productMessage .product-next-detail .product-intro-forth #addToCart {
+      width: 150px;
+      height: 34px;
+      border: 1px solid #C8A985;
+      margin-top: 24px; }
+    #productDetail #productMessage .product-next-detail .product-intro-forth #buy {
+      color: #C8A985;
+      background: white; }
+    #productDetail #productMessage .product-next-detail .product-intro-forth #addToCart {
+      background-color: #C8A985;
+      color: white;
+      margin-left: 10px; }
+    #productDetail #productMessage .product-next-detail .product-intro-forth ol {
+      list-style: none;
+      margin-top: 30px; }
+      #productDetail #productMessage .product-next-detail .product-intro-forth ol li {
+        float: left;
+        width: 162px;
+        position: relative;
+        line-height: 48px;
+        font-size: 12px;
+        height: 48px; }
+        #productDetail #productMessage .product-next-detail .product-intro-forth ol li span {
+          margin-right: 16px;
+          width: 48px;
+          height: 48px;
+          display: inline-block;
+          background: url(../src/images/guaranteed_warranty.png); }
+        #productDetail #productMessage .product-next-detail .product-intro-forth ol li a {
+          color: #999;
+          height: 48px;
+          line-height: 48px;
+          position: absolute; }
+  #productDetail .cart-alert {
+    width: 500px;
+    height: 400px;
+    border: 1px solid #999;
+    position: fixed;
+    top: 148px;
+    right: 36px;
+    background: white;
+    display: none; }
+    #productDetail .cart-alert a {
+      color: red; }

@@ -7,6 +7,50 @@
   height: 80px;
   background-image: url(../src/images/154288026284_1300x80.jpg); }
 
+#borderFixed {
+  width: 390px; }
+  #borderFixed .right-list {
+    position: fixed;
+    right: 0;
+    top: 212px;
+    z-index: 2000;
+    list-style: none; }
+    #borderFixed .right-list li a {
+      background: url(../src/images/share02.png) no-repeat -90px -160px;
+      background-color: #333333;
+      width: 36px;
+      height: 36px;
+      display: block;
+      margin: 2px 0;
+      border-radius: 15% 0 0 15%; }
+  #borderFixed .cart-list {
+    right: -396px;
+    width: 354px;
+    border-left: 1px solid #333333;
+    border-right: 1px solid #333333;
+    border-top: 1px solid #999;
+    height: 100%;
+    background: white;
+    position: fixed;
+    top: 0;
+    z-index: 2000;
+    padding: 0 20px; }
+    #borderFixed .cart-list .cart-title {
+      list-style: none; }
+      #borderFixed .cart-list .cart-title .cart-title-li {
+        border-bottom: 1px solid #999;
+        font-weight: bold; }
+        #borderFixed .cart-list .cart-title .cart-title-li span {
+          height: 54px;
+          line-height: 54px;
+          display: inline-block; }
+        #borderFixed .cart-list .cart-title .cart-title-li a {
+          float: right;
+          margin: 19px 20px 0 0; }
+      #borderFixed .cart-list .cart-title .cart-goods-list {
+        height: 400px;
+        text-align: center; }
+
 #userNavigation {
   overflow: hidden;
   height: 30px;
@@ -642,7 +686,8 @@ a {
       float: left;
       text-align: center;
       font-size: 12px; }
-      #hotItems .produce-list li p, #hotItems .produce-list li span {
+      #hotItems .produce-list li p,
+      #hotItems .produce-list li span {
         display: block;
         color: #666666;
         height: 20px;
@@ -659,7 +704,9 @@ a {
     #hotItems .produce-list li:nth-of-type(3) {
       width: 222px;
       margin-bottom: 8px; }
-    #hotItems .produce-list li:nth-of-type(4), #hotItems .produce-list li:nth-of-type(5), #hotItems .produce-list li:last-of-type {
+    #hotItems .produce-list li:nth-of-type(4),
+    #hotItems .produce-list li:nth-of-type(5),
+    #hotItems .produce-list li:last-of-type {
       width: 270px;
       height: 255px; }
     #hotItems .produce-list li:nth-of-type(5) {

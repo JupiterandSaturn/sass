@@ -5,14 +5,42 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="../dist/produce.min.css" />
 	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/produce.js"></script>
 	<script src="js/public.js"></script>
+	<script src="js/requestAnimationFrame.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.fly.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body>
 	<!--header头部-->
 	<header>
 		<div id="businessCard"></div>
+		<div id="borderFixed">
+			<ol class="right-list">
+				<li>
+					<a href="javascript:;"></a>
+				</li>
+				<li>
+					<a href="javascript:;"></a>
+				</li>
+				<li>
+					<a href="javascript:;"></a>
+				</li>
+				<li>
+					<a href="javascript:;"></a>
+				</li>
+			</ol>
+			<div class="cart-list">
+				<ol class="cart-title">
+					<li class="cart-title-li"><span>购物袋</span>
+						<a href="javascript:;"><img src="../src/images/new-close.png" /></a>
+					</li>
+					<li class="cart-goods-list">您的购物袋还没有商品<br>再去逛逛吧！</li>
+				</ol>
+
+			</div>
+		</div>
 		<!--登录注册在这里-->
 		<div id="userNavigation">
 			<div class="user-NavigationFrame">
@@ -315,6 +343,7 @@
 					</li>
 				</ol>
 			</div>
+
 			<div id="productMessage">
 				<div class="product-intro">
 					<!--<div class="product-intro-first">
@@ -331,8 +360,7 @@
 						<p><span></span></p>
 					</div>-->
 				</div>
-				
-				
+
 				<div class="product-next-detail">
 					<div class="product-intro-third">
 						<ul class="select-size">
@@ -371,11 +399,29 @@
 							<li><span>包邮政策</span>白金钻石顺丰包邮</li>
 							<li><span>发票政策</span>海外商品暂不支持发票</li>
 						</ul>
+						<input type="button" name="buy" id="buy" value="立即购买" />
+						<input type="button" name="addToCart" id="addToCart" value="加入购物袋" />
+						<ol>
+							<li><span></span>
+								<a href="javascript:;">100%正品保证</a>
+							</li>
+							<li><span></span>
+								<a href="javascript:;">商务部诚信企业</a>
+							</li>
+							<li><span></span>
+								<a href="javascript:;">无忧售后保障</a>
+							</li>
+						</ol>
 					</div>
+
+				</div>
+
+				<div class="cart-alert">
+					商品成功放入购物袋，我的购物袋有<span>2</span>件商品<br>
+					<a href="shoppingcart.html">去购物车结算</a>
+
 				</div>
 			</div>
-
-		</div>
 		</div>
 	</article>
 

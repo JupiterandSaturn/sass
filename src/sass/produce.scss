@@ -127,7 +127,7 @@
     #productMessage {
         height: 654px;
         width: 640px;
-        background: red;
+        
         float: left;
         margin-left: 56px;
         .product-intro {
@@ -255,7 +255,7 @@
             .product-intro-forth{
                 ul{
                     list-style:none;
-                    font-size:10px;
+                    font-size:12px;
                     color:#999;
                     li{
                         span{
@@ -269,9 +269,66 @@
                         margin-right:50px;
                     }
                 }
+                #buy,#addToCart{
+                    width:150px;
+                    height:34px;
+                    border:1px solid #C8A985;
+                    margin-top:24px;
+                }
+                #buy{
+                    color:#C8A985;
+                    background: white;
+                }
+                #addToCart{
+                    background-color: #C8A985;
+                    color:white;
+                    margin-left:10px;
+                   
+                }
+                ol{
+                    list-style: none;
+                    margin-top:30px;
+                    li{
+                        float:left;
+                        width:162px;
+                        position:relative;
+                        
+                        line-height:48px;
+                        font-size:12px;
+                        height:48px;
+                        span{
+                            margin-right:16px;
+                            width:48px;
+                            height:48px;
+                            display:inline-block;
+                            background: url(../src/images/guaranteed_warranty.png);
+                        }
+                        a{
+                            color:#999;
+                             height:48px;
+                             line-height: 48px;
+                             position:absolute;
+                            
+                             
+                        }
+                    }
+                }
             }
             }
          
         
+    }
+    .cart-alert{
+        width:500px;
+        height:400px;
+        border:1px solid #999;
+        position:fixed;
+        top:148px;
+        right:36px;
+        background: white;
+        display: none;
+        a{
+            color:red;
+        }
     }
 }
