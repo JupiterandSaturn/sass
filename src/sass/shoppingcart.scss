@@ -75,6 +75,7 @@
         }
         li:nth-of-type(2) {
             width: 94px;
+           
         }
         li:nth-of-type(3) {
             width: 222px;
@@ -84,9 +85,13 @@
         }
         li:nth-of-type(5) {
             width: 160px;
-              .product-count{
+              
+        }
+        li:nth-of-type(6) {
+            width: 118px;
+            .product-count{
                        margin-top:30px;
-                       margin-left:32px;
+                       margin-left:10px;
                         .product-leftBtn,.product-rightBtn{
                             float:left;
                             width:22px;
@@ -111,9 +116,6 @@
                             
                         }
                     }
-        }
-        li:nth-of-type(6) {
-            width: 118px;
         }
         li:nth-of-type(7) {
             width: 156px;

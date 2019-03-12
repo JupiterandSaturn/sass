@@ -356,33 +356,31 @@ a {
         background: #cf0101; }
       #nav5lux #productNavigation .produce-nav li:hover a {
         color: white; }
-    #nav5lux #productNavigation .oversea-service {
-      float: right; }
-      #nav5lux #productNavigation .oversea-service .first-back {
-        float: left;
-        width: 86px;
-        height: 38px;
-        margin-right: 264px;
-        background: url(../src/images/overseaslogo.gif); }
-      #nav5lux #productNavigation .oversea-service .second-back {
-        width: 30px;
-        height: 38px;
-        position: absolute;
-        right: 225px;
-        background: url(../src/images/share02.png) -237px -66px; }
-      #nav5lux #productNavigation .oversea-service .third-back {
-        width: 30px;
-        height: 38px;
-        position: absolute;
-        right: 195px;
-        background: url(../src/images/share02.png) -296px -66px; }
-      #nav5lux #productNavigation .oversea-service .forth-back {
-        width: 20px;
-        height: 38px;
-        position: absolute;
-        right: 155px;
-        padding-right: 20px;
-        background: url(../src/images/share02.png) -354px -66px; }
+    #nav5lux #productNavigation .oversea-service .first-back {
+      float: left;
+      width: 86px;
+      height: 38px;
+      margin-right: 264px;
+      background: url(../src/images/overseaslogo.gif); }
+    #nav5lux #productNavigation .oversea-service .second-back {
+      width: 30px;
+      height: 38px;
+      position: absolute;
+      right: 225px;
+      background: url(../src/images/share02.png) -237px -66px; }
+    #nav5lux #productNavigation .oversea-service .third-back {
+      width: 30px;
+      height: 38px;
+      position: absolute;
+      right: 195px;
+      background: url(../src/images/share02.png) -296px -66px; }
+    #nav5lux #productNavigation .oversea-service .forth-back {
+      width: 20px;
+      height: 38px;
+      position: absolute;
+      right: 155px;
+      padding-right: 20px;
+      background: url(../src/images/share02.png) -354px -66px; }
 
 #selectService {
   width: 100%; }

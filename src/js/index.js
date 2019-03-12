@@ -141,7 +141,9 @@ $(function() {
 	
 	})
 	
-	
+	$('#hotItems .produce-list li').click(function(){
+		location.href="../src/produce.html";
+	})
 
 	
 })

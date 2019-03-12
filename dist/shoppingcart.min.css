@@ -356,33 +356,31 @@ a {
         background: #cf0101; }
       #nav5lux #productNavigation .produce-nav li:hover a {
         color: white; }
-    #nav5lux #productNavigation .oversea-service {
-      float: right; }
-      #nav5lux #productNavigation .oversea-service .first-back {
-        float: left;
-        width: 86px;
-        height: 38px;
-        margin-right: 264px;
-        background: url(../src/images/overseaslogo.gif); }
-      #nav5lux #productNavigation .oversea-service .second-back {
-        width: 30px;
-        height: 38px;
-        position: absolute;
-        right: 225px;
-        background: url(../src/images/share02.png) -237px -66px; }
-      #nav5lux #productNavigation .oversea-service .third-back {
-        width: 30px;
-        height: 38px;
-        position: absolute;
-        right: 195px;
-        background: url(../src/images/share02.png) -296px -66px; }
-      #nav5lux #productNavigation .oversea-service .forth-back {
-        width: 20px;
-        height: 38px;
-        position: absolute;
-        right: 155px;
-        padding-right: 20px;
-        background: url(../src/images/share02.png) -354px -66px; }
+    #nav5lux #productNavigation .oversea-service .first-back {
+      float: left;
+      width: 86px;
+      height: 38px;
+      margin-right: 264px;
+      background: url(../src/images/overseaslogo.gif); }
+    #nav5lux #productNavigation .oversea-service .second-back {
+      width: 30px;
+      height: 38px;
+      position: absolute;
+      right: 225px;
+      background: url(../src/images/share02.png) -237px -66px; }
+    #nav5lux #productNavigation .oversea-service .third-back {
+      width: 30px;
+      height: 38px;
+      position: absolute;
+      right: 195px;
+      background: url(../src/images/share02.png) -296px -66px; }
+    #nav5lux #productNavigation .oversea-service .forth-back {
+      width: 20px;
+      height: 38px;
+      position: absolute;
+      right: 155px;
+      padding-right: 20px;
+      background: url(../src/images/share02.png) -354px -66px; }
 
 #selectService {
   width: 100%; }
@@ -546,28 +544,28 @@ a {
       width: 108px; }
     #shoppingCartGoods .added-goods li:nth-of-type(5) {
       width: 160px; }
-      #shoppingCartGoods .added-goods li:nth-of-type(5) .product-count {
+    #shoppingCartGoods .added-goods li:nth-of-type(6) {
+      width: 118px; }
+      #shoppingCartGoods .added-goods li:nth-of-type(6) .product-count {
         margin-top: 30px;
-        margin-left: 32px; }
-        #shoppingCartGoods .added-goods li:nth-of-type(5) .product-count .product-leftBtn, #shoppingCartGoods .added-goods li:nth-of-type(5) .product-count .product-rightBtn {
+        margin-left: 10px; }
+        #shoppingCartGoods .added-goods li:nth-of-type(6) .product-count .product-leftBtn, #shoppingCartGoods .added-goods li:nth-of-type(6) .product-count .product-rightBtn {
           float: left;
           width: 22px;
           height: 22px;
           padding: 0;
           border: 1px solid #999; }
-        #shoppingCartGoods .added-goods li:nth-of-type(5) .product-count .product-leftBtn {
+        #shoppingCartGoods .added-goods li:nth-of-type(6) .product-count .product-leftBtn {
           background: url(../src/images/brandstore_share.png) no-repeat -311px -292px;
           background-color: #c8a985; }
-        #shoppingCartGoods .added-goods li:nth-of-type(5) .product-count .product-rightBtn {
+        #shoppingCartGoods .added-goods li:nth-of-type(6) .product-count .product-rightBtn {
           background: url(../src/images/brandstore_share.png) no-repeat -268px -292px;
           background-color: #c8a985; }
-        #shoppingCartGoods .added-goods li:nth-of-type(5) .product-count #txt {
+        #shoppingCartGoods .added-goods li:nth-of-type(6) .product-count #txt {
           float: left;
           width: 42px;
           height: 20px;
           margin: 0 2px; }
-    #shoppingCartGoods .added-goods li:nth-of-type(6) {
-      width: 118px; }
     #shoppingCartGoods .added-goods li:nth-of-type(7) {
       width: 156px; }
     #shoppingCartGoods .added-goods li:nth-of-type(8) {

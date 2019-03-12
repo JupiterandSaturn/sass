@@ -15,7 +15,7 @@ $(function() {
 						<p class="product-id">${arr[i].id}</p>
 					</div>
 			<div class="product-intro-second">
-						<span id = "product-price">￥${arr[i].price}</span>
+						<span class="product-span">￥<span id = "product-price">${arr[i].price}</span></span>
 						<del>￥11163</del>
 						<span class="product-vip">红卡会员价</span>
 						<div></div>
@@ -28,6 +28,10 @@ $(function() {
 			}
 		}
 	}
+	//	var load = $id('#productMessage .cart-alert a');
+	//	load.onclick=function(){
+	//		location.href = '../shoppingcart.html';
+	//	}
 	var productBig = $id('#productDetail .product-pic');
 	var productSmallPic = $id('#productDetail .product-pic .product-big-pic');
 	var productMark = $id('#productDetail .product-pic .product-big-pic .product-mark');
@@ -82,7 +86,7 @@ $(function() {
 	//						<p class="product-id">${arr[i].id}</p>
 	//					</div>
 	//			<div class="product-intro-second">
-	//						<span id = "product-price">￥${arr[i].price}</span>
+	//						<span id = "product-price">${arr[i].price}</span>
 	//						<del>￥11163</del>
 	//						<span class="product-vip">红卡会员价</span>
 	//						<div></div>
@@ -92,16 +96,19 @@ $(function() {
 
 	//加入购物车
 	$('#addToCart').click(function() {
-		$('.cart-alert').css('display', 'block');
+		//$('.cart-alert').css('display', 'block');
+		location.href = '../src/shoppingcart.html';
 	})
+	
 
 	$buy = $('#addToCart');
 	$buy.click(function(event) {
 		//名称 价格 数量 src id
-		let id = $(this).parent().parent().siblings(".product-intro").children(".product-intro-first").children(".product-id");
-		let name = $(this).parent().parent().siblings(".product-intro").children(".product-intro-first").children(".product-name");
-		let price = $(this).parent().parent().siblings(".product-intro").children(".product-intro-second").children(".product-price");
-		let src = $(this).parent().parent().parent().children(".product-pic").children(".product-big-pic").children('img').attr('src');
+		let id = $(this).parent().parent().siblings(".product-intro").attr('data-good-id');
+		let name = $(this).parent().parent().siblings(".product-intro").children(".product-intro-first").children(".product-name").html();
+		let price = $(this).parent().parent().siblings(".product-intro").children(".product-intro-second").children("#product-price").html();
+		let src = $(this).parent().parent().parent().siblings(".product-pic").children(".product-big-pic").children('img').attr('src');
+		
 		//获取cookie
 		//如果有返回字符串，如果没有返回undefined 统一成字符串
 		let cookieStr = $.cookie('cart') ? $.cookie('cart') : '';
@@ -140,29 +147,7 @@ $(function() {
 			expires: 7,
 			path: '/'
 		});
-		//复制出一个img对象
-		$img = $(this).siblings('img').clone().css({
-			width: 50,
-			height: 50
-		});
-
-		$img.fly({
-			start: {
-				left: event.pageX, //开始位置（必填）#fly元素会被设置成position: fixed  
-				top: event.pageY //开始位置（必填）  
-			},
-			end: {
-				left: $('#buy').offset().left, //结束位置（必填）  
-				top: $('#buy').offset().top, //结束位置（必填）  
-				width: 0, //结束时宽度  
-				height: 0 //结束时高度  
-			},
-			onEnd: function() { //结束回调  
-				$img.remove(); //运动结束后删除
-				let num = parseInt(/(\d+)/.exec($('#buy').val())[1]);
-				$('#buy').val('购物车(' + (num + 1) + ')')
-			}
-		});
+	
 	})
 })
 //初始化购物车的数量
