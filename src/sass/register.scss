@@ -1,0 +1,38 @@
+@import 'public';
+#login-top{
+    height:98px;
+    width:90%;
+    padding-left: 10%;
+    .login-logo{
+        width:245px;
+        height:98px;
+        background: url(../src/images/logo.jpg) no-repeat;
+        float:left;
+      
+    }
+    .welcome-login{
+        color:#999;
+        height:44px;
+        width:120px;
+        font-size:20px;
+        float:left;
+        line-height: 44px;
+        border-left:2px solid #CCCCCC;
+        margin:34px 0 0 18px;
+        padding-left:18px;
+    }
+    .login-phone-num{
+        font-size:12px;
+        color:#666666;
+        float:right;
+        margin-right:150px;
+        line-height: 98px;
+        span{
+            display: inline-block;
+            background: url(../src/images/phone-logo.png) no-repeat;
+            width:20px;
+            height:20px;
+           
+        }
+    }
+}

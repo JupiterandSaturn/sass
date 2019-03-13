@@ -1,0 +1,182 @@
+@import 'public';
+#login-top{
+    height:98px;
+    width:90%;
+    padding-left: 10%;
+    .login-logo{
+        width:245px;
+        height:98px;
+        background: url(../src/images/logo.jpg) no-repeat;
+        float:left;
+      
+    }
+    .welcome-login{
+        color:#999;
+        height:44px;
+        width:120px;
+        font-size:20px;
+        float:left;
+        line-height: 44px;
+        border-left:2px solid #CCCCCC;
+        margin:34px 0 0 18px;
+        padding-left:18px;
+    }
+    .login-phone-num{
+        font-size:12px;
+        color:#666666;
+        float:right;
+        margin-right:150px;
+        line-height: 98px;
+        span{
+            display: inline-block;
+            background: url(../src/images/phone-logo.png) no-repeat;
+            width:20px;
+            height:20px;
+           
+        }
+    }
+}
+.login-article{
+    height:586px;
+    width:100%;
+    background: url(../src/images/login_background1.jpg);
+    position:relative;
+    .login-window{
+        height:524px;
+        width:400px;
+        background: white;
+        position:absolute;
+        top:30px;
+        right:194px;
+
+        .login-window-list{
+            list-style: none;
+           
+            width: 340px;
+            margin:0 30px;
+            .login-window-list-title{
+                height:112px;
+                line-height:112px;
+                padding:0 36px;
+                .login-select,.register-select{
+                    font-size:18px;
+                    color:#999;
+                }
+                .login-select{
+                    padding-right:50px;
+                    border-right: 2px solid #999;
+                }
+                .register-select{
+                    padding-left: 50px;
+                }
+            }
+            .login-window-list-article-input{
+                
+                text-align: center;
+                display: none;
+                height:45px;
+                padding-top:218px;
+                position:relative;
+                .login-message{
+                    position:absolute;
+                    top:0;
+           
+                    #username,#password{
+                          width:326px;
+                        height:40px;
+                         padding-left:10px;
+                         color:#c3c3c3;
+                    }
+                    #username{
+                          width:326px;
+                        height:40px;
+                        margin-bottom:14px;
+                    }
+                    #submit{
+                         height:40px;
+                        margin:50px 0 20px 0;
+                         width:340px;
+                        color:white;
+                        background: #333333;
+                        border:none;
+                    }
+                    #submit:hover{
+                        background: #921F0A;
+                    }
+                    .auto-login{
+                        float:left;
+                        color:#999;
+                        font-size:14px;
+                    }
+                    span{
+                        color:#999;
+                    }
+                    .select-next{
+                        float:right;
+                        a{
+                            font-size:14px;
+                            margin:0 8px;
+                        }
+                        a:first-of-type{
+                            color:#da964b;
+                        }
+                        a:last-of-type{
+                            color:#999;
+                        }
+                    }
+                    
+                }
+            }
+            .login-window-list-article{
+          
+               // display: none;
+                text-align: center;
+                position:relative;
+                //height:346px;
+                padding-top:218px;
+                .login-erweima{
+                    width:145px;
+                    height:145px;
+                    display: block;
+                    background: url(http://m.5lux.com/api/gen2qrcode?t=1552448572234) no-repeat -10px -10px;
+                    position:absolute;
+                   top:32px;
+                   left:96px;
+                   
+                }
+                p{
+                    font-size:12px;
+                    color:#999999;
+                    margin-bottom:12px;
+                    span{
+                        color:#ff9900;
+                        font-size:14px;
+                    }
+                    a{
+                        color:#999;
+                    }
+                }
+            }
+            .login-window-list-other{
+                
+                margin-top: 62px;
+                height:18px;
+                width:340px;
+                background: url(../src/images/other-type.jpg) no-repeat -30px 0;
+            }
+            .login-window-list-way{
+                .login-way-logo{
+                    list-style: none;
+                   margin:15px 0 0 98px;
+                    li{
+                        float:left;
+                        width:30px;
+                        height:30px;
+                        background: url(../src/images/is_wx.png);
+                        margin:0 9px;
+                    }
+                }
+            }
+        }
+    }
+}

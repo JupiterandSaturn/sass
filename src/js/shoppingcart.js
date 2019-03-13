@@ -7,8 +7,10 @@ $(function() {
 	if(!cookieStr) {
 		$('.cart-blank').css('display', 'block');
 	} else {
+		
 		//转对象
 		let cookieObj = convertCookieStrToCookieObj(cookieStr);
+		
 		//遍历对象
 		for(let key in cookieObj) {
 			//记录商品id
@@ -31,6 +33,7 @@ $(function() {
 					<li id="del"><a href="javascript:;">删除</a></li>
 				</ul>`;
 			$('.added-cart-list').append(str);
+			//alert(str);
 		}
 
 		$('.added-goods .list-image').css({
@@ -39,9 +42,11 @@ $(function() {
 		});
 		//获取所有减号
 		$minus = $('.product-count .product-leftBtn');
+	
 		//遍历加事件
 		$minus.each(function() {
 			$(this).click(function() {
+				//alert('111');
 				//获取当前操作的商品ID
 				let id = $(this).parents('.added-goods').attr('gata-good-id');
 				//修改cookie
@@ -54,11 +59,14 @@ $(function() {
 						expires: 7,
 						path: '/'
 					});
+					//alert(cookieObj[id].num);
+					//alert($(this).next().val())		
 					//数量框
 					$(this).next().val(cookieObj[id].num);
 					//小计
 					$(this).parent().parent().next().next().html(cookieObj[id].num * cookieObj[id].price);
 				}
+				return false;
 			})
 		})
 		//			<ul class="added-goods" gata-good-id = "${key}">
@@ -80,6 +88,7 @@ $(function() {
 		//				</ul>
 		//获取所有加号
 		let $plus = $('.product-count .product-rightBtn');
+	
 		//遍历加事件
 		$.each($plus, function() {
 			$(this).click(function() {
@@ -93,11 +102,13 @@ $(function() {
 				});
 				$(this).prev().val(cookieObj[id].num);
 				$(this).parent().parent().next().next().html(cookieObj[id].num * cookieObj[id].price);
+				return false;
 			})
 		})
 
 		//获取所有的数量框
 		let $numInput = $('.product-count #txt');
+		
 		//遍历加事件
 		$numInput.each(function() {
 			$(this).blur(function() {
@@ -115,6 +126,7 @@ $(function() {
 					path: '/'
 				});
 				$(this).val(cookieObj[id].num);
+				
 				$(this).parent().parent().next().next().html(cookieObj[id].num * cookieObj[id].price);
 			})
 		})

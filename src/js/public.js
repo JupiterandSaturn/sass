@@ -131,21 +131,21 @@ $(function() {
 	$total = $('.shopping-cart .total .total-num');
 	var num = $total.text();
 	console.log(num);
-	
-		$id('.shopping-cart').onmouseenter=function(){
-			if(num == '0') {
-			$('#shoppingOne').css('display', 'block');
-			
+//	
+//		$id('.shopping-cart').onmouseenter = function(){
+//		
+//			$('#shoppingOne').css('display', 'block');
+//			
+//		
+//		}
+//		
+//			$id('.shopping-cart').onmouseleave = function(){
+//		
+//			$('#shoppingOne').css('display', 'none');
+//			
+//			}
+//		
 		
-		}
-		}
-			$id('.shopping-cart').onmouseleave=function(){
-				if(num == '0') {
-			$('#shoppingOne').css('display', 'none');
-			
-			}
-		
-		}
 	
 })
 
