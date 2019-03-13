@@ -509,11 +509,11 @@ a {
       background: black;
       opacity: 0.3;
       position: absolute;
-      z-index: 1000; }
+      z-index: 1002; }
     #imageBanner .image-list #right {
       right: 0; }
     #imageBanner .image-list #btnLeft {
-      z-index: 1000;
+      z-index: 1005;
       width: 30px;
       height: 50px;
       background: url(../src/images/templateleft.png);
@@ -522,7 +522,7 @@ a {
       top: 457px;
       left: 260px; }
     #imageBanner .image-list #btnRight {
-      z-index: 1000;
+      z-index: 1005;
       width: 30px;
       height: 50px;
       background: url(../src/images/templateright.png);

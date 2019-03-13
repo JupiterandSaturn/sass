@@ -8,7 +8,10 @@
 		<script src="js/jquery-1.11.3.js"></script>
 		<script src="js/register.js"></script>
 		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
-
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/requestAnimationFrame.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.fly.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js"></script>
 	</head>
 
 	<body>
@@ -51,29 +54,20 @@
 			<div class="login-article">
 				<div class="login-window">
 					<div class="login-window-small">
-						<ul class="login-window-list">
-							<li class="login-window-list-title">
-								<p>注册第五大道</p>
-							</li>
-							<li class="login-window-list-article-input">
-								<div class="login-message">
-									<input type="text" name="username" id="username" placeholder="邮箱/手机号/账号" />
-									<input type="text" name="password" id ="password" placeholder="密码"/>
-									<input type="button" id="submit" value="立即登录" />
-									<span class ="auto-login"><input type="checkbox" name="checkbox" id="checkbox" value="" />自动登录</span>
-									<span class="select-next"><a href="">立即注册</a>| <a href="">忘记密码？</a></span>
-								</div>
-							</li>
-							<li class="login-window-list-other">
-							</li>
-							<li class="login-window-list-way">
-								<ol class="login-way-logo">
-									<li></li>
-									<li></li>
-									<li></li>
-								</ol>
-							</li>
-						</ul>
+						<div class="login-window-list" data-user-id = "sq1">
+
+							<p class="login-window-list-title">注册第五大道</p>
+							<input type="text" name="name" id="name" placeholder="手机号(请输入11位有效数字)" />
+							<input type="text" name = "testnum" id="testnum" placeholder="请输入验证码" />
+							<div class="test-num">获取验证码</div>
+							<input type="text" name="pwd" id="pwd" placeholder="请输入密码" />
+							<input type="text" name ="repwd" id="repwd" placeholder="确认密码" />
+							<input type="button" name = "register" id="register" value="立即注册"/>
+							<span class="admit-rule"><input type="checkbox" name="admit" id="admit" value="" />我已阅读并同意<a href="">《第五大道用户协议》</a></span>
+							<span class="had-id"><a href="login.html">已有账号？</a></span>
+								
+							</span>
+						</div>
 					</div>
 				</div>
 			</div>

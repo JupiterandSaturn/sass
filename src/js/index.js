@@ -11,7 +11,9 @@ $(function() {
 	$btnRight = $('#btnRight');
 	let index = 5;
 	var timer = null;
-
+	slide();
+	autoPlay();
+	
 	$btnLeft.mouseenter(function() {
 		clearInterval(timer);
 	})
@@ -42,8 +44,7 @@ $(function() {
 		slide();
 	})
 
-	slide();
-	autoPlay();
+	
 
 	function slide() {
 
@@ -114,6 +115,8 @@ $(function() {
 		
 	})
 	
+	
+	
 	$oLi = $('.select-card li');
 	$.each($oLi,function(i,value){
 		$(this).mouseenter(function(){
@@ -141,8 +144,12 @@ $(function() {
 	
 	})
 	
+	
+	
 	$('#hotItems .produce-list li').click(function(){
-		location.href="../src/produce.html";
+		
+		location.href ='produce.html';
+		return false;
 	})
 
 	

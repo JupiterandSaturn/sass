@@ -1,38 +1,111 @@
 @import 'public';
-#login-top{
-    height:98px;
-    width:90%;
+#login-top {
+    height: 98px;
+    width: 90%;
     padding-left: 10%;
-    .login-logo{
-        width:245px;
-        height:98px;
+    .login-logo {
+        width: 245px;
+        height: 98px;
         background: url(../src/images/logo.jpg) no-repeat;
-        float:left;
-      
+        float: left;
     }
-    .welcome-login{
-        color:#999;
-        height:44px;
-        width:120px;
-        font-size:20px;
-        float:left;
+    .welcome-login {
+        color: #999;
+        height: 44px;
+        width: 120px;
+        font-size: 20px;
+        float: left;
         line-height: 44px;
-        border-left:2px solid #CCCCCC;
-        margin:34px 0 0 18px;
-        padding-left:18px;
+        border-left: 2px solid #CCCCCC;
+        margin: 34px 0 0 18px;
+        padding-left: 18px;
     }
-    .login-phone-num{
-        font-size:12px;
-        color:#666666;
-        float:right;
-        margin-right:150px;
+    .login-phone-num {
+        font-size: 12px;
+        color: #666666;
+        float: right;
+        margin-right: 150px;
         line-height: 98px;
-        span{
+        span {
             display: inline-block;
             background: url(../src/images/phone-logo.png) no-repeat;
-            width:20px;
-            height:20px;
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.login-article {
+    height: 586px;
+    width: 100%;
+    background: url(../src/images/login_background1.jpg);
+    position: relative;
+    .login-window {
+        height: 524px;
+        width: 400px;
+        background: white;
+        position: absolute;
+        top: 30px;
+        right: 194px;
+        .login-window-list {
+            height: 524px;
+            width: 340px;
+            margin: 0 30px;
+            .login-window-list-title {
+                text-align: center;
+                height: 112px;
+                line-height: 112px;
+                padding: 0 36px;
+                font-size: 20px;
+            }
+            input{
+                margin-bottom:20px;
+            }
+            #name,#pwd,#repwd{
+                 width:326px;
+                  height:40px;
+                  padding-left:10px;
+            }
+            #testnum{
+                width:180px;
+                height:40px;
+                 padding-left:10px;
+            }
+             .test-num{
+                width:126px;
+                height:42px;
+                text-align: center;
+                line-height: 42px;
+                background: #ECECEC;
+                
+                float:right;
+            }
+            #register{
+                width:340px;
+                height:60px;
+                border:none;
+                background: black;
+                color:white;
+                margin-top:10px;
+                font-size: 18px;
+            }
            
+            .admit-rule{
+                font-size:14px;
+                color:#999;
+                a{
+                    color:black;
+                    font-size:14px;
+                }
+            }
+            .had-id{
+                float:right;
+                a{
+                    color:#DA964B;
+                    font-size:14px;
+                }
+            }
+            
         }
     }
 }
